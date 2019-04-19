@@ -1,27 +1,24 @@
 import React, { Component } from 'react'
 // import ReactDOM from 'react-dom';
 import "./NavBar.css"
+import { connect } from 'react-redux'
+import { toggleMenu } from './../redux/actions/navActionCreators';
 
-export default class NavBar extends Component {
-  state = {
-    navItems: [ 'Home', 'About Me', 'Skills', 'Projects', 'Contact' ],
-    expanded: false
+
+class NavBar extends Component {
+
+  onToggle = (e) => {
+    this.props.toggleMenu(!this.props.expanded)
   }
 
-  toggleMenu = () => (
-    this.setState({expanded: !this.state.expanded})
-  )
-    
-  
-  
   render() {
     return (
       
-      this.state.expanded 
+      this.props.expanded 
       ?
         <div id="nav-bar" >
           <ul className="nav-items">
-            {this.state.navItems.map( item => (
+            {this.props.navItems.map( item => (
               <li key={item} className="nav-item">
                 {item}
               </li>))
@@ -31,7 +28,7 @@ export default class NavBar extends Component {
           </ul>
         </div>
       :
-        <div id='nav-burger' onClick={this.toggleMenu}>
+        <div id='nav-burger' onClick={this.onToggle}>
 
         </div>
 
@@ -39,3 +36,14 @@ export default class NavBar extends Component {
     )
   }
 }
+
+const mapStateToProps = (state) => ({
+  navItems: state.navItems,
+  expanded: state.expanded
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleMenu: (arg) => dispatch(toggleMenu(arg)),
+})
+export default connect(mapStateToProps, mapDispatchToProps) (NavBar)
+
