@@ -1,0 +1,57 @@
+/* @import "../_variables.scss"; */
+
+#nav-bar, #nav-burger {
+    position: absolute;
+    border-radius: 50%;
+    /* transform: translateX(-420px); */
+    /* transition: transform 400ms ease-in; */
+    background-image: url(../assets/sun.svg);
+    color: #664b00;
+    z-index: 3;
+   
+}
+
+#nav-bar {
+    height: 400px;
+    width: 400px;
+    min-height: 200px;
+    top: -50px;
+    left: -50px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+#nav-burger {
+    height: 100px;
+    width: 100px;
+}
+
+.nav-items {
+    flex: 1;
+    margin: auto;
+    /* align-self: center; */
+    
+}
+
+.nav-items {
+    text-align: center;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .active {
+    color: white;
+} */
+/* .navitems li:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+
+
