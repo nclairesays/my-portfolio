@@ -1,5 +1,5 @@
 const initialState = {
-    navItems: [ 'Home', 'About Me', 'Skills', 'Projects', 'Contact' ],
+    navItems: [ 'Home', 'About Me', 'Skills', 'Projects', 'Resume', 'Contact' ],
     expanded: false
 }
 export const rootReducer = (state = initialState, { type, payload }) => {

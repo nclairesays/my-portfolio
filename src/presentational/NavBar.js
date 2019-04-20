@@ -12,23 +12,18 @@ class NavBar extends Component {
   }
 
 
-  
-  onToggleBurger = (e) => {
 
-    // e.className.toggle("change");
-    console.log(e)
-    // return <div className="container" onclick={this.onToggleBurger}>
-    //           <div className="bar1"></div>
-    //           <div className="bar2"></div>
-    //           <div className="bar3"></div>
-    // </div>
-  }
-
-
+  displayBars = (cName) => (
+    <div className={cName}  onClick={this.onToggle}>
+      <div className="bar1"></div>
+      <div className="bar2"></div>
+      <div className="bar3"></div>
+    </div> 
+  )
   
 
   render() {
-    const className = this.props.expanded ? 'x-container' : 'burger-container'
+    const className = this.props.expanded ? 'x-container change' : 'burger-container'
     
     return (
       
@@ -36,17 +31,14 @@ class NavBar extends Component {
       this.props.expanded 
       ? 
         <div id="nav-bar" >
-            <div className='x-container change' onClick={this.onToggle}> 
-                    <div className="bar1"></div>
-                    <div className="bar2"></div>
-                    <div className="bar3"></div>
+            <div className={className} onClick={this.onToggle}> 
+              <div className="bar1"></div>
+              <div className="bar2"></div>
+              <div className="bar3"></div>
             </div>
+
           <ul className="nav-items">
-            {/* <li className='x-container change' onClick={this.onToggle}> 
-                    <div className="bar1"></div>
-                    <div className="bar2"></div>
-                    <div className="bar3"></div>
-            </li> */}
+
             {this.props.navItems.map( item => (
               <li key={item}>
                 {item}
