@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { NavBar } from './presentational';
+import { NavBar, Home } from './components';
+import './styles/App.scss'
 
 
 // import './styles.css'
@@ -7,13 +8,10 @@ class App extends Component {
   render() {
     return (
     <>
-      <NavBar />
-          <div>
-            
-  
-
-          </div>
-      
+      <NavBar />  
+      {/* <div className='slides'>      
+      <Home />
+      </div> */}
     </>
     )
   }

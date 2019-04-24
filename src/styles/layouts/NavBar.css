@@ -1,0 +1,134 @@
+#nav-bar, #nav-burger {
+  position: absolute;
+  background-image: url(sun.svg);
+  background-repeat: no-repeat;
+  background-size: stretch;
+  color: #664b00;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav-bar {
+  height: 30vw;
+  width: 30vw;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
+  top: -50px;
+  left: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.3em;
+  font-size: 1.3em;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  /* transform: translateX(10px); 
+    transition: transform 400ms ease-in;  */
+}
+
+#nav-burger {
+  height: 100px;
+  width: 100px;
+}
+
+.nav-items {
+  /* flex: 1; */
+  /* margin: auto; */
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+  position: relative;
+  top: -10px;
+}
+
+/* .active {
+    color: white;
+    border-right: 2px dotted #ffffff;
+    border-left: 2px dotted #ffffff;
+    padding-bottom: 24px;
+
+} */
+li:hover {
+  color: #0f8a7c;
+  cursor: pointer;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+.burger-container {
+  display: inline;
+  z-index: 5;
+  cursor: pointer;
+  margin: auto;
+}
+
+.x-container {
+  z-index: 5;
+  cursor: pointer;
+  position: relative;
+  top: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.x-container:hover div, .burger-container:hover div {
+  background-color: white;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #0f8a7c;
+  margin: 6px 0;
+  -webkit-transition: .7s;
+  transition: .7s;
+  z-index: 5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/*# sourceMappingURL=NavBar.css.map */

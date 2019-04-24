@@ -1,0 +1,229 @@
+/* :horizontal scrolling, each need to be in their own slide */
+/* .slide {
+    display: inline-block;
+    white-space: normal;
+  }
+   */
+.slide {
+  /* width: 80vw;
+    height: 80vh;
+    min-width: 80vw;
+    min-height: 80vh;
+    max-width: 80vw;
+    max-height: 80vh; */
+  /* padding: 10%; */
+  /* position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+
+    z-index: 2;
+    display: flex;
+    align-content: center;
+    justify-content: center; */
+  position: relative;
+  padding: 8% 0;
+}
+
+.slide__content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  background-color: red;
+  border: 1px solid black;
+  opacity: 0.6;
+  padding: 10vw;
+}
+
+.slide {
+  display: inline-block;
+  white-space: normal;
+}
+
+/* Large screen layout
+  --------------------------------------------- */
+@media screen and (min-width: 45em) {
+  .slide__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slide__image, .slide__text {
+    padding: 3%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .slide:nth-child(2n) .slide__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* horizontal scroll styles */
+  html, body {
+    height: 100%;
+  }
+  .slides {
+    white-space: nowrap;
+    height: 100%;
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    margin-right: -.3em;
+  }
+  .slide__content {
+    height: 100%;
+  }
+}
+
+#nav-bar, #nav-burger {
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-size: stretch;
+  color: #664b00;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav-bar {
+  height: 30vw;
+  width: 30vw;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 500px;
+  max-height: 500px;
+  top: -50px;
+  left: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.3em;
+  font-size: 1.3em;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  /* transform: translateX(10px); 
+    transition: transform 400ms ease-in;  */
+}
+
+#nav-burger {
+  height: 100px;
+  width: 100px;
+}
+
+.nav-items {
+  /* flex: 1; */
+  /* margin: auto; */
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline;
+  position: relative;
+  top: -10px;
+}
+
+/* .active {
+    color: white;
+    border-right: 2px dotted #ffffff;
+    border-left: 2px dotted #ffffff;
+    padding-bottom: 24px;
+
+} */
+li:hover {
+  color: #0f8a7c;
+  cursor: pointer;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+}
+
+.burger-container {
+  display: inline;
+  z-index: 5;
+  cursor: pointer;
+  margin: auto;
+}
+
+.x-container {
+  z-index: 5;
+  cursor: pointer;
+  position: relative;
+  top: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.x-container:hover div, .burger-container:hover div {
+  background-color: white;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #0f8a7c;
+  margin: 6px 0;
+  -webkit-transition: .7s;
+  transition: .7s;
+  z-index: 5;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/*# sourceMappingURL=App.css.map */

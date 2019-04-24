@@ -1,8 +1,8 @@
-/* @import "../_variables.scss"; */
+@import "../helpers/parameters";
 
 #nav-bar, #nav-burger {
     position: absolute;
-    background-image: url(../assets/sun.svg);
+    background-image: url(sun.svg);
     background-repeat: no-repeat;
     background-size: stretch;
     color: #664b00;
@@ -28,8 +28,8 @@
     justify-content: center;
     align-content: space-around;
 
-    // transform: translateX(10px); 
-    // transition: transform 400ms ease-in; 
+     /* transform: translateX(10px); 
+    transition: transform 400ms ease-in;  */
 
 
 
@@ -125,34 +125,3 @@ align-content: center;
 -webkit-transform: rotate(45deg) translate(-8px, -8px);
 transform: rotate(45deg) translate(-8px, -8px);
 }
-
-/* If the screen size is 800px wide or less,(smaller screens)*/
-@media screen and (max-width: 800px) {
-    #nav-bar {
-        /* display: none; */
-        font-size:1.1em
-        /* background-image: none;  */
-
-    }
-}
-
-/* 
-@media screen and (min-width: 1500px) {
-    #navbar{
-        font-size: 14px;
-
-    }
-}
-
-/* @media screen and (min-width: 800px) {
-    #navbar{
-    }
-} */
-
-/*
-@media screen and (max-width: 300px) {
-    #navbar{
-        display:none;
-        /* background-image: none; 
-    }
-} */
