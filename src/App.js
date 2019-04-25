@@ -1,47 +1,36 @@
 import React, { Component } from 'react'
-import { NavBar } from './presentational';
+import { NavBar, Home, About, Skills, Projects, Contact } from './components';
+import { connect } from 'react-redux'
 import "./styles/all.scss"
+
 class App extends Component {
+
+
   render() {
     return (
     <>
       <NavBar />
       <div class='scrolling-wrapper'>
-        <div class='page'>
-          <div class='slide'>
-          slide here 1
-          </div>
-        </div>
-        <div class='page'>
-          <div class='slide'>
-          slide here 2
-          </div>
-        </div>
-        <div class='page'>
-          <div class='slide'>
-          slide here 2
-          </div>
-        </div>
-        <div class='page'>
-          <div class='slide'>
-          slide here 2
-          </div>
-        </div>
-        <div class='page'>
-          <div class='slide'>
-          slide here 2
-          </div>
-        </div>
-        <div class='page'>
-          <div class='slide'>
-          slide here 2
-          </div>
-        </div>
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+
       </div>
     </>
     )
   }
 }
 
-export default App 
+
+const mapStateToProps = (state) => ({
+  navItems: state.navItems,
+  // expanded: state.expanded
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  // toggleMenu: (arg) => dispatch(toggleMenu(arg)),
+})
+export default connect(mapStateToProps, mapDispatchToProps) (App)
 

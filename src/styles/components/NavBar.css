@@ -1,6 +1,6 @@
 /* @import "../_variables.scss"; */
 #nav-bar, #nav-burger {
-  position: absolute;
+  position: fixed;
   background-image: url(../../assets/sun.svg);
   background-repeat: no-repeat;
   background-size: stretch;
@@ -9,6 +9,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#nav-burger {
+  height: 100px;
+  width: 100px;
+  top: 0;
 }
 
 #nav-bar {
@@ -38,11 +44,6 @@
           justify-content: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-}
-
-#nav-burger {
-  height: 100px;
-  width: 100px;
 }
 
 .nav-items {

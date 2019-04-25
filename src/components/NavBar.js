@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 // import ReactDOM from 'react-dom';
 import "../styles/components/NavBar.scss"
 import { connect } from 'react-redux'
-import { toggleMenu } from './../redux/actions/navActionCreators';
+import { toggleMenu } from '../redux/actions/navActionCreators';
 
 
 class NavBar extends Component {
