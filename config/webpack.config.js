@@ -382,6 +382,15 @@ module.exports = function(webpackEnv) {
                 sourceMaps: false,
               },
             },
+            // Claire - adding scss/sass loader per https://github.com/webpack-contrib/sass-loader
+            {
+              test: /\.(scss|sass)$/, // if file ends with .scss or .sass
+              use: [
+                  "style-loader", // creates style nodes from JS strings
+                  "css-loader", // translates CSS into CommonJS
+                  "sass-loader" // compiles Sass to CSS, using Node Sass by default
+              ]
+            },
             // "postcss" loader applies autoprefixer to our CSS.
             // "css" loader resolves paths in CSS and adds assets as dependencies.
             // "style" loader turns CSS into JS modules that inject <style> tags.
@@ -413,6 +422,7 @@ module.exports = function(webpackEnv) {
                 getLocalIdent: getCSSModuleLocalIdent,
               }),
             },
+
             // Opt-in support for SASS (using .scss or .sass extensions).
             // By default we support SASS Modules with the
             // extensions .module.scss or .module.sass
@@ -457,7 +467,14 @@ module.exports = function(webpackEnv) {
               // its runtime that would otherwise be processed through "file" loader.
               // Also exclude `html` and `json` extensions so they get processed
               // by webpacks internal loaders.
-              exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
+              exclude: [
+                /\.(js|mjs|jsx|ts|tsx)$/, 
+                /\.html$/, 
+                /\.json$/,
+                // Claire -- added the two below, part of tutorial
+                // /\.svg$/,
+                // /\.sass$/
+              ],
               options: {
                 name: 'static/media/[name].[hash:8].[ext]',
               },

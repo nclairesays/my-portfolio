@@ -1,8 +1,8 @@
 /* @import "../_variables.scss"; */
 
 #nav-bar, #nav-burger {
-    position: absolute;
-    background-image: url(../assets/sun.svg);
+    position: fixed;
+    background-image: url(../../assets/sun.svg);
     background-repeat: no-repeat;
     background-size: stretch;
     color: #664b00;
@@ -107,10 +107,6 @@ transition: .7s;
 z-index: 5;
 justify-content: center
 }
-
-
-
-
 
 .change .bar1 {
 -webkit-transform: rotate(-45deg) translate(-9px, 6px);

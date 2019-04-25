@@ -1,20 +1,21 @@
-html, body {
-  margin: 0;
-  padding: 0;
+body, html{
+  margin: -1vh auto 0 auto;
+  padding: -1vh 0;
   font-family: -apple-system, BlinkMacSystemFont, "Abel", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
-  background-image: url('./assets/bg-sky3.png');
+  height: 98vh;
+  background-image: url('./assets/bg-sky4.png');
   background-size: cover;
-  background-repeat:  no-repeat;
-  background-position: right;
-
-
-  
+  background-repeat:  repeat-x;
 }
+
+html {
+  background-color: red;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -36,24 +37,5 @@ code {
   background-size: cover;
 }
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
 
 
-
-
-/* :horizontal scrolling, each need to be in their own slide */
-.slides {
-  overflow-x: hidden;
-  overflow-y: auto;
-  white-space: nowrap;
-}
-
-.slide {
-  display: inline-block;
-  white-space: normal;
-}
