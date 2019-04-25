@@ -3,15 +3,13 @@ import React, { Component } from 'react'
 import "../styles/components/NavBar.scss"
 import { connect } from 'react-redux'
 import { toggleMenu } from '../redux/actions/navActionCreators';
-
+import { NavLink } from 'react-router-dom'
 
 class NavBar extends Component {
 
   onToggle = () => {
     this.props.toggleMenu(!this.props.expanded)
   }
-
-
 
   displayBars = (cName) => (
     <div className={cName}  onClick={this.onToggle}>
@@ -21,13 +19,9 @@ class NavBar extends Component {
     </div> 
   )
   
-
   render() {
     const className = this.props.expanded ? 'x-container change' : 'burger-container'
-    
     return (
-      
- 
       this.props.expanded 
       ? 
         <div id="nav-bar" >
@@ -36,16 +30,12 @@ class NavBar extends Component {
               <div className="bar2"></div>
               <div className="bar3"></div>
             </div>
-
           <ul className="nav-items">
-
             {this.props.navItems.map( item => (
               <li key={item}>
-                {item}
+                <a href={'#'+item}>{item}</a>
               </li>))
-            }
-            
-          
+            }  
           </ul>
         </div>
       :
@@ -56,8 +46,6 @@ class NavBar extends Component {
               <div className="bar3"></div>
             </div>
         </div>
-
-     
     )
   }
 }

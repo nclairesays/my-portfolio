@@ -70,11 +70,18 @@ ul {
 
 } */
 
-li:hover {
+a {
+    color: #664b00;
+    text-decoration-line: none;
+
+}
+
+a:hover {
     color: #0f8a7c;
     cursor: pointer;
     text-decoration-line: underline;
     text-decoration-color: white;
+    transition-duration: .6s;
 } 
 
 
