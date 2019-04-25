@@ -6,25 +6,23 @@ class Home extends Component {
 
   componentDidMount() {
     if(this.props.loading){
-      setTimeout(() => this.onLoad(), 3000)
+      setTimeout(() => this.onLoad(), 1000)
     }
   }
-
+  
   onLoad = () => {
     this.props.toggleLoad(!this.props.loading)
-    return 
   }
-  
   
   render() {
     return (
     <div className='page' id="Home">
     <div className='slide'>
-      <div className='intro'>
+      <div className={this.props.loading ? 'hide' : 'intro'}>
         Hi, I'm Claire.
       </div>
     </div> {/*slide*/}
-    </div>
+    </div> // page
     )
   }
 }
