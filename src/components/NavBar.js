@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-// import ReactDOM from 'react-dom';
 import "../styles/components/NavBar.scss"
 import { connect } from 'react-redux'
 import { toggleMenu } from '../redux/actions/navActionCreators';
-import { NavLink } from 'react-router-dom'
 
 class NavBar extends Component {
 
@@ -19,6 +17,13 @@ class NavBar extends Component {
     </div> 
   )
   
+  scrollIntoView = (id) => {
+    const page = document.querySelector(id)
+    id !== "#Resume" 
+    ? page.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
+    : window.open("https://docs.google.com/document/d/1V82mMk7HMN0K81cRahdlDxu1J4LGAboE0lfOzxhBP48/");
+  }
+
   render() {
     const className = this.props.expanded ? 'x-container change' : 'burger-container'
     return (
@@ -32,10 +37,11 @@ class NavBar extends Component {
             </div>
           <ul className="nav-items">
             {this.props.navItems.map( item => (
-              <li key={item}>
-                <a href={'#'+item}>{item}</a>
+              <li key={item} onClick={() => this.scrollIntoView("#"+item)}>
+                {item}
               </li>))
             }  
+            
           </ul>
         </div>
       :
