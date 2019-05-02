@@ -16,7 +16,7 @@ class App extends Component {
           <Skills />
           <Projects />
           <Contact />
-        </div> */}   
+        </div>   
     </>
     )
   }

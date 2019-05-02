@@ -4,15 +4,15 @@ import '../styles/components/Home.scss'
 import { toggleLoad } from '../redux/actions/navActionCreators'
 class Home extends Component {
 
-  componentDidMount() {
-    if(this.props.loading){
-      setTimeout(() => this.onLoad(), 1000)
-    }
-  }
+  // componentDidMount() {
+  //   if(this.props.loading){
+  //     setTimeout(() => this.onLoad(), 1000)
+  //   }
+  // }
   
-  onLoad = () => {
-    this.props.toggleLoad(!this.props.loading)
-  }
+  // onLoad = () => {
+  //   this.props.toggleLoad(!this.props.loading)
+  // }
   
 
 
@@ -32,12 +32,15 @@ class Home extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  loading: state.loading
-})
+// const mapStateToProps = (state) => ({
+//   loading: state.loading
+// })
 
-const mapDispatchToProps = (dispatch) => ({
-  toggleLoad: (bool) => dispatch(toggleLoad(bool))
-})
-export default connect(mapStateToProps, mapDispatchToProps) (Home)
+// const mapDispatchToProps = (dispatch) => ({
+//   toggleLoad: (bool) => dispatch(toggleLoad(bool))
+// })
 
+// export default connect(mapStateToProps, mapDispatchToProps) (Home)
+
+
+export default Home
