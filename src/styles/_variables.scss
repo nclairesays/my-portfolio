@@ -1,31 +1,42 @@
 /*Variables*/
 
-.center { margin: 0 auto; }
-.content{ margin: 0 auto; width: 960px; }
-.clear { clear: both; }
+.center {
+  margin: 0 auto;
+}
 
+.content {
+  margin: 0 auto;
+  width: 960px;
+}
 
-
-    // pretty green color: 
-    // background-color: rgba(21, 253, 0, 0.3);
+.clear {
+  clear: both;
+}
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 $bg-color: #fff;
 $main-font: "Open Sans";
+$transparent-background: rgba(255, 255, 255, 0.6);
+$primary-color: #0f8a7c; // teal
+$white-border: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white; // for text-shadow prop
+$profile-pic: url('../assets/profile.jpg')
+
+// pretty green color:
+// background-color: rgba(21, 253, 0, 0.3);
 
 /* $primary-color: #266294; //blue */
-$primary-color: #0f8a7c; // teal
-$secondary-color: #ffd900; //yellow
-$secondary-color: #e6b833;
-$light-color: #ddd; //light gray
-$accent-color: rgb(236, 32, 209); //pink
-$dark-color: #628a97; //darker blue
+// $primary-color: #0f8a7c; // teal
+// $secondary-color: #ffd900; //yellow
+// $secondary-color: #e6b833;
+// $light-color: #ddd; //light gray
+// $accent-color: rgb(236, 32, 209); //pink
+// $dark-color: #628a97; //darker blue
 
-@function set-text-color($bg-color) {
-  @if (lightness($bg-color) > 50) {
-    @return #000;
-  } @else {
-    @return #fff;
-  }
-}
+// @function set-text-color($bg-color) {
+//   @if (lightness($bg-color) > 50) {
+//     @return #000;
+//   } @else {
+//     @return #fff;
+//   }
+// }

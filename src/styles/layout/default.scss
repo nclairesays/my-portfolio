@@ -1,3 +1,5 @@
+@import '../_variables.scss';
+
 .scrolling-wrapper {
     height:98vh;
     position: absolute;
@@ -7,9 +9,6 @@
     background-repeat:  repeat-x;
     background-size:contain;
     // background-size:cover;
-
-
-
 
     .page {
         // background: rgba(255, 255, 255, 0.5);
@@ -22,13 +21,23 @@
         .slide {
             margin-top: 3vh;
             width: 90%;
-            background-color: rgba(255, 255, 255, 0.3);
+            // background-color: $transparent-background;
             // justify-content: center;
             align-content: center;
             text-align: center;
             border-radius: 3rem;
             display: flex;
             flex-direction: column;
+            padding: 1em 2em;
+            
+        
+            & h1 {
+                font-family: monospace;
+                font-size: 4em;
+                color: $primary-color;
+                margin: 0 0 .2em 0;
+                // text-shadow: $white-border;
+            }
         }
     }
     
