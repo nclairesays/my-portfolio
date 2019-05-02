@@ -12,7 +12,7 @@
 
 
     .page {
-        background: rgba(255, 255, 255, 0.5);
+        // background: rgba(255, 255, 255, 0.5);
         height:98vh;
         width: 100vw;
         display: flex;  
@@ -22,8 +22,8 @@
         .slide {
             margin-top: 3vh;
             width: 90%;
-            // background-color: rgba(255, 255, 255, 0.6);
-            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.3);
+            // justify-content: center;
             align-content: center;
             text-align: center;
             border-radius: 3rem;

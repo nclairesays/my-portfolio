@@ -10,7 +10,6 @@
 }
 
 .scrolling-wrapper .page {
-  background: rgba(255, 255, 255, 0.5);
   height: 98vh;
   width: 100vw;
   display: -webkit-box;
@@ -27,9 +26,7 @@
 .scrolling-wrapper .page .slide {
   margin-top: 3vh;
   width: 90%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
