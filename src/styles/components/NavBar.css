@@ -67,6 +67,12 @@ ul {
     padding-bottom: 24px;
 
 } */
+li {
+  color: #664b00;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
 li:hover {
   color: #0f8a7c;
   cursor: pointer;
@@ -74,6 +80,8 @@ li:hover {
           text-decoration-line: underline;
   -webkit-text-decoration-color: white;
           text-decoration-color: white;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
 }
 
 .burger-container {

@@ -1,20 +1,16 @@
-.intro {
-  font-size: 10em;
-}
-
-.test {
-  color: red;
-}
-
 .scrolling-wrapper {
   height: 98vh;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url("../assets/bg-sky4.png");
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 .scrolling-wrapper .page {
+  background: rgba(255, 255, 255, 0.5);
   height: 98vh;
   width: 100vw;
   display: -webkit-box;
@@ -31,11 +27,118 @@
 .scrolling-wrapper .page .slide {
   margin-top: 3vh;
   width: 90%;
-  background-color: rgba(255, 255, 255, 0.6);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
   border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.typewriter {
+  font-size: 4em;
+  display: inline-block;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 4s steps(25, end), blink-caret 0.5s linear 13;
+          animation: typing 4s steps(25, end), blink-caret 0.5s linear 13;
+  width: 12em;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+.headline {
+  font-size: 1.5em;
+  display: inline-block;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  -webkit-animation-name: typing2;
+          animation-name: typing2;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes typing2 {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes typing2 {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  1% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border-right: 0.15em orange;
+  }
+}
+@keyframes blink-caret {
+  1% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border-right: 0.15em orange;
+  }
 }
 /*# sourceMappingURL=all.css.map */

@@ -4,9 +4,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url("../assets/bg-sky4.png");
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 .scrolling-wrapper .page {
+  background: rgba(255, 255, 255, 0.5);
   height: 98vh;
   width: 100vw;
   display: -webkit-box;
@@ -23,11 +27,19 @@
 .scrolling-wrapper .page .slide {
   margin-top: 3vh;
   width: 90%;
-  background-color: rgba(255, 255, 255, 0.6);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
   border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=default.css.map */

@@ -14,13 +14,18 @@ class Home extends Component {
     this.props.toggleLoad(!this.props.loading)
   }
   
+
+
   render() {
+  
     return (
     <div className='page' id="Home">
     <div className='slide'>
-      <div className={this.props.loading ? 'hide' : 'intro'}>
-        Hi, I'm Claire.
-      </div>
+      {/* <div className={this.props.loading ? 'hide' : 'intro'}> */}
+    
+      <span className={'typewriter'} >Hi, I'm Claire...</span>
+      <span className={'headline'}>I'm a full-stack developer.</span>
+
     </div> {/*slide*/}
     </div> // page
     )

@@ -4,13 +4,6 @@ body, html {
   font-family: -apple-system, BlinkMacSystemFont, "Abel", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 98vh;
-  background-image: url("./assets/bg-sky4.png");
-  background-size: cover;
-  background-repeat: repeat-x;
-}
-
-html {
-  background-color: red;
+  background-color: #8cc5be;
 }
 /*# sourceMappingURL=index.css.map */
