@@ -6,6 +6,9 @@ class Projects extends Component {
       <div className='page' id="Projects">
       <div className='slide'>
         <h1>Projects!</h1>
+        <main className={'main'}>
+          info here
+        </main>
       </div>
       </div>
     )

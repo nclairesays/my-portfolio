@@ -6,6 +6,9 @@ class Contact extends Component {
     <div className='page' id="Contact">
     <div className='slide'>
       <h1>Let's Talk!</h1>
+      <main className={'main'}>
+          info here
+      </main>
     </div>
     </div>
       )
