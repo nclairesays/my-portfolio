@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 
+
 class Skills extends Component {
   render() {
     let i = 0
@@ -9,16 +10,19 @@ class Skills extends Component {
     return (
       <div className='page' id='Skills'>
       <div className='slide'>
-        <h1>Skills</h1>
+        <h1>Skills/Experiences</h1>
         <main className={'main'}>
-          Here's some technologies I've worked with:
-          {/* {this.props.skills.map( s => {
-            i++
-            return <div className={'skill'}>
-              <img src={s} alt={i} />
-              {i++}
-            </div>
-          })} */}
+          <div className={'skills-description'}>
+          Skills and Experience!
+          </div>
+           <br/>
+          <div className={'skills-logos-container'}>
+            {this.props.skills.map( s => {
+              i++
+              return <div className={'skill'} key={s} style={{backgroundImage: `url(${s})` }}></div>
+            })}
+          </div>
+          
 
         </main> 
       </div>
@@ -39,6 +43,6 @@ const mapDispatchToProps = dispatch => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(Skills)
 
-
+// export default Skills
 
 

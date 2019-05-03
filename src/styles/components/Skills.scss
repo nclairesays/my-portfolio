@@ -1,4 +1,27 @@
-.skill {
-    flex:1;
-    max-width: 300px;
+#Skills > .slide > main {
+    flex-direction: column;
+    .skills-description {
+        background-color: red;
+    }
+
+}
+
+
+
+
+.skills-logos-container{
+    flex-flow: row wrap;
+    display: flex;
+    flex: 1 1 auto;
+    // background-color: blue;
+    max-height: 50vh;
+    justify-content: space-evenly;
+    
+    .skill {
+        flex: 1 1 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        // background-image: url('../../assets/profile.jpg')
+    }
+    
 }
