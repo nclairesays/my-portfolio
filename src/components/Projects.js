@@ -1,18 +1,25 @@
 import React, { Component } from 'react'
+import Slide  from './Slide'
+import '../styles/components/Projects.scss'
+import Modal from './Modal'
 
 class Projects extends Component {
+
+
   render() {
     return (
-      <div className='page' id="Projects">
-      <div className='slide'>
-        <h1>Projects!</h1>
-        <main className={'main'}>
-          info here
-        </main>
-      </div>
-      </div>
+      <Slide slideID={'Projects'} slideTitle={'Projects'} mainContent={this.mainContent()} />
     )
   }
+
+  mainContent = () => {
+    console.log('this here appears')
+
+    
+    return <Modal />
+  }
+
+
 }
 
 export default Projects

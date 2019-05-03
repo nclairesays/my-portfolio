@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
+import '../styles/components/Skills.scss'
 
 
 class Skills extends Component {
@@ -10,7 +10,7 @@ class Skills extends Component {
     return (
       <div className='page' id='Skills'>
       <div className='slide'>
-        <h1>Skills/Experiences</h1>
+        <h1>Skills</h1>
         <main className={'main'}>
           <div className={'skills-description'}>
           Skills and Experience!
