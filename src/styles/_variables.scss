@@ -1,18 +1,5 @@
 /*Variables*/
 
-.center {
-  margin: 0 auto;
-}
-
-.content {
-  margin: 0 auto;
-  width: 960px;
-}
-
-.clear {
-  clear: both;
-}
-
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 $bg-color: #fff;
@@ -21,6 +8,7 @@ $transparent-background: rgba(255, 255, 255, 0.6);
 $primary-color: #0f8a7c; // teal
 $white-border: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white; // for text-shadow prop
 $profile-pic: url('../assets/profile.jpg')
+
 
 // pretty green color:
 // background-color: rgba(21, 253, 0, 0.3);

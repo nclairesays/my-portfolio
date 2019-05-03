@@ -4,15 +4,15 @@ import '../styles/components/Home.scss'
 import { toggleLoad } from '../redux/actions/navActionCreators'
 class Home extends Component {
 
-  // componentDidMount() {
-  //   if(this.props.loading){
-  //     setTimeout(() => this.onLoad(), 1000)
-  //   }
-  // }
+  componentDidMount() {
+    if(this.props.loading){
+      setTimeout(() => this.onLoad(), 1000)
+    }
+  }
   
-  // onLoad = () => {
-  //   this.props.toggleLoad(!this.props.loading)
-  // }
+  onLoad = () => {
+    this.props.toggleLoad(!this.props.loading)
+  }
   
 
 
@@ -21,10 +21,11 @@ class Home extends Component {
     return (
     <div className='page' id="Home">
     <div className='slide'>
-      {/* <div className={this.props.loading ? 'hide' : 'intro'}> */}
-    
-      <span className={'typewriter'} >Hi, I'm Claire...</span>
-      <span className={'headline'}>I'm a full-stack developer.</span>
+      {/* <span className={this.props.loading ? 'hide' : 'show'} style={{alignItems: 'center'}}> */}
+        <span className={this.props.loading ? 'hide' : 'typewriter'} >Hi there, I'm Claire!</span>
+        <span className={this.props.loading ? 'hide' : 'headline'} >I'm a full-stack developer.</span>
+
+      {/* </span> */}
 
     </div> {/*slide*/}
     </div> // page
@@ -32,15 +33,15 @@ class Home extends Component {
   }
 }
 
-// const mapStateToProps = (state) => ({
-//   loading: state.loading
-// })
+const mapStateToProps = (state) => ({
+  loading: state.loading
+})
 
-// const mapDispatchToProps = (dispatch) => ({
-//   toggleLoad: (bool) => dispatch(toggleLoad(bool))
-// })
+const mapDispatchToProps = (dispatch) => ({
+  toggleLoad: (bool) => dispatch(toggleLoad(bool))
+})
 
-// export default connect(mapStateToProps, mapDispatchToProps) (Home)
+export default connect(mapStateToProps, mapDispatchToProps) (Home)
 
 
-export default Home
+// export default Home

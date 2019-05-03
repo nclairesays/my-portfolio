@@ -8,12 +8,12 @@ export function toggleMenu(boolean) {
     }
 }
 
-// not using at the moment
-// export function toggleLoad(boolean) {
-//     return {
-//         type: 'TOGGLE_LOAD',
-//         payload: {
-//             loading: boolean
-//         }
-//     }
-// }
+
+export function toggleLoad(boolean) {
+    return {
+        type: 'TOGGLE_LOAD',
+        payload: {
+            loading: boolean
+        }
+    }
+}
