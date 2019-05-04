@@ -1,5 +1,8 @@
 @import '../variables';
 
+// #About .slide main{
+//     border: 2px dotted $secondary-color;
+// }
 
 
 #profilepic {
@@ -20,5 +23,5 @@
     text-align: left;
     padding: 1em;
     background-color: $transparent-background;
-    margin-left: 1em;
+//    border: 2px dotted $secondary-color;
 }

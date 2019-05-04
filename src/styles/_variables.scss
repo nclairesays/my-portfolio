@@ -4,30 +4,25 @@
 
 $bg-color: #fff;
 $main-font: "Open Sans";
-$transparent-background: rgba(255, 255, 255, 0.6);
+$transparent-background: rgba(255, 255, 255, 0.7);
 $transparent-background2: rgba(15, 68, 61, 0.788);
 $transparent-background3: rgba(17, 17, 17, 0.5);
 
 $primary-color: #0f8a7c; // teal
+$secondary-color: #ffce00; //sun yellow
+$tertiary-color: #ffbc00; //sun orange
 $white-border: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white; // for text-shadow prop
 $teal-border: 4px 4px $primary-color, -1px 1px $primary-color, 1px -1px $primary-color, -1px -1px $primary-color; // for text-shadow prop
-
 $text-brown: #664b00;
 $text-dark-brown: #3a2a00;
 
-
-
+$main-font: (-apple-system, BlinkMacSystemFont, "Abel", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif)
 
 // pretty green color:
 // background-color: rgba(21, 253, 0, 0.3);
 
-/* $primary-color: #266294; //blue */
-// $primary-color: #0f8a7c; // teal
-// $secondary-color: #ffd900; //yellow
-// $secondary-color: #e6b833;
-// $light-color: #ddd; //light gray
-// $accent-color: rgb(236, 32, 209); //pink
-// $dark-color: #628a97; //darker blue
 
 // @function set-text-color($bg-color) {
 //   @if (lightness($bg-color) > 50) {
