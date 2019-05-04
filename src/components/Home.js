@@ -22,8 +22,8 @@ class Home extends Component {
     <div className='page' id="Home">
     <div className='slide'>
       {/* <span className={this.props.loading ? 'hide' : 'show'} style={{alignItems: 'center'}}> */}
-        <span className={this.props.loading ? 'hide' : 'typewriter'} >Hi there, I'm Claire!</span>
-        <span className={this.props.loading ? 'hide' : 'headline'} >I'm a full-stack developer.</span>
+        <h1 className={this.props.loading ? 'hide' : 'typewriter'} >Hi there, I'm Claire!</h1>
+        <h4 className={this.props.loading ? 'hide' : 'headline'} >I'm a full-stack developer.</h4>
 
       {/* </span> */}
 

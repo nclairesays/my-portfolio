@@ -28,15 +28,19 @@
             border-radius: 3rem;
             display: flex;
             flex-direction: column;
-            padding: 1em 2em .5em 2em;
+            padding: .5em 2em .5em 2em;
+            
             
         
             & h1 {
                 font-family: monospace;
                 font-size: 4em;
-                color: $primary-color;
+                // color: $primary-color;
+                color: white;
+                letter-spacing: 0.15em;
                 margin: 0 0 .2em 0;
-                // text-shadow: $white-border;
+                
+                text-shadow: $teal-border;
             }
 
             & main {
@@ -45,6 +49,8 @@
                 flex: 1 1 auto;
                 // flex-wrap: nowrap; 
                 // background-color: $transparent-background;
+                font-size: 1.2em;
+                color: $text-dark-brown;
             } 
         }
     }

@@ -10,7 +10,12 @@ $transparent-background3: rgba(17, 17, 17, 0.5);
 
 $primary-color: #0f8a7c; // teal
 $white-border: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white; // for text-shadow prop
-// $profile-pic: url('../assets/profile.jpg')
+$teal-border: 4px 4px $primary-color, -1px 1px $primary-color, 1px -1px $primary-color, -1px -1px $primary-color; // for text-shadow prop
+
+$text-brown: #664b00;
+$text-dark-brown: #3a2a00;
+
+
 
 
 // pretty green color:
