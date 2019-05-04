@@ -14,9 +14,14 @@ class Projects extends Component {
 
   mainContent = () => {
     console.log('this here appears')
+    return <>
 
-    
-    return <Modal />
+      <div key={'b2b'} className={'projectCard'} onClick={()=> <Modal key={'b2b'}/>}> Babbles to Babbles </div>
+      <div key={'jTreender'} className={'projectCard'} onClick={()=> <Modal key={'jTreender'}/>}> Jackson Treender</div>
+      <div key={'meetupEd'} className={'projectCard'} onClick={()=> <Modal key={'meetupEd'}/>}> Meetup Education</div>
+
+    </>
+     
   }
 
 

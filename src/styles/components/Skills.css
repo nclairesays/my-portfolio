@@ -1,1 +1,36 @@
-/* No CSS *//*# sourceMappingURL=Skills.css.map */
+#Skills > .slide > main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Skills > .slide > main .skills-description {
+  background-color: red;
+}
+
+.skills-logos-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-height: 50vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.skills-logos-container .skill {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=Skills.css.map */

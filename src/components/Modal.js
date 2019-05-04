@@ -1,10 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import ModalDescription from './ModalDescription'
+import ModalImageContainer from './ModalImageContainer'
 import '../styles/components/Modal.scss'
 
-const Modal = (props) => {
-    return <div id={'Modal'}>
-        sdfsdf MODAL
+class Modal extends React.Component{
+   render(){
+       const {description} = this.props
+       return (
+        <div className={'modal'}>
+            <ModalImageContainer />
+            <ModalDescription description={description} />
         </div>
+       )
+   }
 }
 
-export default Modal
+const mapStateToProps = (state) => ({
+ 
+})
+
+const mapDispatchToProps = {
+  
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ModalImageContainer)

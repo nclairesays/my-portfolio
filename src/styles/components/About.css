@@ -1,35 +1,7 @@
 /*Variables*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.center {
-  margin: 0 auto;
-}
-
-.content {
-  margin: 0 auto;
-  width: 960px;
-}
-
-.clear {
-  clear: both;
-}
-
 /* $primary-color: #266294; //blue */
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-main #profilepic {
+#profilepic {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -41,9 +13,10 @@ main #profilepic {
   background-size: cover;
   background-repeat: none;
   background-position: center center;
+  background-image: url(../../assets/sun.svg);
 }
 
-main .aboutMeDetails {
+.aboutMeDetails {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;

@@ -1,18 +1,5 @@
 /*Variables*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.center {
-  margin: 0 auto;
-}
-
-.content {
-  margin: 0 auto;
-  width: 960px;
-}
-
-.clear {
-  clear: both;
-}
-
 /* $primary-color: #266294; //blue */
 .scrolling-wrapper {
   height: 98vh;
@@ -61,5 +48,35 @@
   font-size: 4em;
   color: #0f8a7c;
   margin: 0 0 .2em 0;
+}
+
+.scrolling-wrapper .page .slide main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.clear {
+  clear: both;
 }
 /*# sourceMappingURL=default.css.map */

@@ -1,20 +1,9 @@
 /*Variables*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.center {
-  margin: 0 auto;
-}
-
-.content {
-  margin: 0 auto;
-  width: 960px;
-}
-
-.clear {
-  clear: both;
-}
-
 /* $primary-color: #266294; //blue */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .scrolling-wrapper {
   height: 98vh;
   position: absolute;
@@ -43,7 +32,6 @@
 .scrolling-wrapper .page .slide {
   margin-top: 3vh;
   width: 90%;
-  background-color: rgba(255, 255, 255, 0.6);
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
@@ -65,6 +53,38 @@
   margin: 0 0 .2em 0;
 }
 
+.scrolling-wrapper .page .slide main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*Variables*/
+/* $primary-color: #266294; //blue */
 #Home .slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -86,9 +106,9 @@
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
   /* Adjust as needed */
-  -webkit-animation: typing 4s steps(25, end), blink-caret 0.5s linear 13;
-          animation: typing 4s steps(25, end), blink-caret 0.5s linear 13;
-  width: 12em;
+  -webkit-animation: typing 4s steps(25, end), blink-caret 0.5s linear 14;
+          animation: typing 4s steps(25, end), blink-caret 0.5s linear 14;
+  width: 15em;
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
 }
@@ -176,41 +196,8 @@
 }
 
 /*Variables*/
-.center {
-  margin: 0 auto;
-}
-
-.content {
-  margin: 0 auto;
-  width: 960px;
-}
-
-.clear {
-  clear: both;
-}
-
 /* $primary-color: #266294; //blue */
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-main #profilepic {
+#profilepic {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -222,14 +209,114 @@ main #profilepic {
   background-size: cover;
   background-repeat: none;
   background-position: center center;
+  background-image: url(../../assets/sun.svg);
 }
 
-main .aboutMeDetails {
+.aboutMeDetails {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;
   overflow: auto;
   text-align: left;
   padding: 1em;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-left: 1em;
+}
+
+#Skills > .slide > main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Skills > .slide > main .skills-description {
+  background-color: red;
+}
+
+.skills-logos-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-height: 50vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.skills-logos-container .skill {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*Variables*/
+/* $primary-color: #266294; //blue */
+#Contact > .slide > main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #ff0000;
+  background-color: #00ff00;
+  width: 100%;
+  height: 100%;
+}
+
+/* Department information styling */
+/* Contact form styling */
+.contact-input {
+  width: 100%;
+  margin-bottom: 2em;
+  padding: 0.5em .5em;
+  border-radius: 0.5em;
+  border: 1px lightgray solid;
+  font-size: 1em;
+}
+
+#message {
+  height: 15em;
+}
+
+#send-btn {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 3.5em 30px 0;
+  padding: 0.3em 2.2em;
+  background: red;
+  border-radius: 0.4em;
+  border: 1px red solid;
+}
+
+@media screen and (max-width: 770px) {
+  .contact-title {
+    padding-left: 30px;
+    width: 30%;
+    font-size: 3.2em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-title {
+    padding-left: 10px;
+    width: 30%;
+    font-size: 3em;
+  }
 }
 /*# sourceMappingURL=all.css.map */

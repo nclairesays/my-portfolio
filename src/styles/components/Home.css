@@ -1,3 +1,6 @@
+/*Variables*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* $primary-color: #266294; //blue */
 #Home .slide {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -19,9 +22,9 @@
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
   /* Adjust as needed */
-  -webkit-animation: typing 4s steps(25, end), blink-caret 0.5s linear 13;
-          animation: typing 4s steps(25, end), blink-caret 0.5s linear 13;
-  width: 12em;
+  -webkit-animation: typing 4s steps(25, end), blink-caret 0.5s linear 14;
+          animation: typing 4s steps(25, end), blink-caret 0.5s linear 14;
+  width: 15em;
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
 }

@@ -4,7 +4,7 @@ import '../styles/components/Contact.scss'
 class Contact extends Component {
   render() {
     return (
-      <Slide slideID={'Projects'} slideTitle={`Let's Talk!`} mainContent={this.mainContent()} />
+      <Slide slideID={'Contact'} slideTitle={`Let's Talk!`} mainContent={this.mainContent()} />
       
       )
   }

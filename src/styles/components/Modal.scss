@@ -1,6 +1,6 @@
 @import '../variables';
 
-#Modal {
+.modal {
     background-color: $transparent-background3;
     position: fixed;
     width: 100vw;
@@ -8,4 +8,10 @@
     z-index: 3;
     top: 0;
     left: 0;
+}
+
+.projectCard {
+    width: 10em;
+    height: 10em;
+    background-color: plum;
 }

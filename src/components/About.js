@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import '../styles/components/About.scss'
-// import profile from '../assets/profile.jpg'
 import Slide from './Slide'
-import '../styles/components/Contact.scss'
+import ProfilePic from './ProfilePic'
 
 class About extends Component {
   render() {
@@ -12,9 +10,6 @@ class About extends Component {
   }
   mainContent = () => {
     return <>
-      <div id={'profilepic'} style={{}}>
-      currently getting errors with sass regarding setting background image to a local file.
-      </div>
     
       <div className={'aboutMeDetails'}> 
       
@@ -26,7 +21,12 @@ class About extends Component {
 
       <p>Sed lectus. <i>Sed convallis tristique sem</i>. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. </p>
 
+      <p>At the end of it all, I am just a girl who wants to be part of something bigger than herself. I want positive and meaningful . </p>
+      nature, adventure ,
+      journey
       </div>
+      <ProfilePic />
+
     </>
   }
 }

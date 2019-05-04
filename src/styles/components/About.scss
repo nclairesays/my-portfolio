@@ -4,15 +4,14 @@
 
 #profilepic {
     flex:1;
-    border: 1px solid #ff0000;
-    background-color: #00ff00;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center center;
-    // background-image: url(../../assets/profile.jpg)
+    background-image: url(../assets/profile1.jpg);
+    
     
 }
 .aboutMeDetails {

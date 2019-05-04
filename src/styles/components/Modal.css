@@ -1,0 +1,19 @@
+/*Variables*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* $primary-color: #266294; //blue */
+.modal {
+  background-color: rgba(17, 17, 17, 0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.projectCard {
+  width: 10em;
+  height: 10em;
+  background-color: plum;
+}
+/*# sourceMappingURL=Modal.css.map */

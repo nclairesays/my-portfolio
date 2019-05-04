@@ -5,7 +5,6 @@ const initialState = {
     skills: [
         'https://www.armia.com/project/img/rubyrails.png',
         'http://www.sclance.com/pngs/react-logo-png/react_logo_png_1140479.png',
-
         'http://pluspng.com/img-png/logo-javascript-png-esp8266-ile-sunucuya-javascript-530.png',
         'http://pluspng.com/img-png/logo-javascript-png-file-javascript-logo-png-1052.png',
         'https://codedistrict.io/wp-content/uploads/2017/12/reduxLogo.png',
@@ -13,6 +12,23 @@ const initialState = {
         'https://cdn-images-1.medium.com/max/1200/1*ub1DguhAtkCLvhUGuVGr6w.png',
         'https://tips.tutorialhorizon.com/files/2017/09/json-logo.png',
         'https://www.essentialdesigns.net/wp-content/uploads/2017/10/heartreact.png',
+    ],
+    projects: [
+        { b2b: {
+            title: 'Babbles to Babbles',
+            description: 'description of b2b',
+            images: []
+        }},
+        { jTreender: {
+            title: 'Jackson Treender',
+            description: 'description of jTreender',
+            images: []
+        }},
+        { meetupEd: {
+            title: 'Meetup Education',
+            description: 'description of meetupEd',
+            images: []
+        }},       
 
     ]
 }
