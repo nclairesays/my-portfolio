@@ -5,8 +5,8 @@ class ModalImageContainer extends Component {
   
   render() {
     return (
-      <div>
-          container for individual project
+      <div className={'modal-image-container'}>
+          container for individual project Images
         
       </div>
     )

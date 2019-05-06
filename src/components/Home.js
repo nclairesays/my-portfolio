@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import '../styles/components/Home.scss'
-import { toggleLoad } from '../redux/actions/navActionCreators'
+import { toggleLoad } from '../redux/actions/navAction'
 class Home extends Component {
 
   componentDidMount() {

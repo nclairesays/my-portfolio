@@ -13,7 +13,7 @@ class App extends Component {
         <div className='scrolling-wrapper'>
           <Home />
           <About />
-          <Skills />
+          {/* <Skills /> */}
           <Projects />
           <Contact />
         </div>   

@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import Slide  from './Slide'
-import '../styles/components/Projects.scss'
+// import '../styles/components/Projects.scss'
+import ProjectCardContainer from './ProjectCardContainer';
 import Modal from './Modal'
-
+import { toggleModal } from '../redux/actions/modalAction'
+import { connect } from 'react-redux'
 class Projects extends Component {
-
+  state={
+    showModal: false
+  }
 
   render() {
     return (
@@ -12,14 +16,24 @@ class Projects extends Component {
     )
   }
 
+  handleClick = () => {
+    console.log('handle click projects')
+    this.setState({ showModal: !this.state.showModal })
+  }
+
   mainContent = () => {
-    console.log('this here appears')
+    console.log(this.state)
     return <>
+    
+      <ProjectCardContainer key='b2b' toggleModal={() => this.handleClick()}/>
+      {/* <ProjectCardContainer key='jTreender' toggleModal={() => this.handleClick()}/>
+      <ProjectCardContainer key='meetupEd' toggleModal={() => this.handleClick()}/> */}
 
-      <div key={'b2b'} className={'projectCard'} onClick={()=> <Modal key={'b2b'}/>}> Babbles to Babbles </div>
-      <div key={'jTreender'} className={'projectCard'} onClick={()=> <Modal key={'jTreender'}/>}> Jackson Treender</div>
-      <div key={'meetupEd'} className={'projectCard'} onClick={()=> <Modal key={'meetupEd'}/>}> Meetup Education</div>
-
+      {
+        this.state.showModal
+        ? <Modal toggleModal={this.handleClick}/>
+        : null
+      }
     </>
      
   }
@@ -27,4 +41,13 @@ class Projects extends Component {
 
 }
 
-export default Projects
+
+const mapStateToProps = (state) => ({
+  toggleModal: state.showModal
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleModal: (arg) => dispatch(toggleModal(arg)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Projects)

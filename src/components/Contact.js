@@ -12,13 +12,15 @@ class Contact extends Component {
     );
   }
   mainContent = () => {
-    return this.contactForm();
-  };
+    return this.contactForm()
+  }
+  
 
   handleSubmit = (e) => { 
     e.preventDefault()
     console.log('something submited') 
   };
+
   contactForm = () => {
     return (
       <div className="contact-container">
@@ -42,10 +44,20 @@ class Contact extends Component {
           />
 
           <input id="submit-btn" type="submit" value="Send" />
+          
         </form>
+       
       </div>
     );
   };
+  
+  socialMedia = () => {
+    return <div id={'social-media'}>
+          <div className={'media'}>Linkedin</div>
+          <div className={'media'}>Github</div>
+    </div>
+  }
 }
+
 
 export default Contact;
