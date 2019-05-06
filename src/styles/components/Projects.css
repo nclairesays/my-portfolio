@@ -1,1 +1,11 @@
-/* No CSS *//*# sourceMappingURL=Projects.css.map */
+.project-card-container {
+  width: 10em;
+  height: 10em;
+  cursor: pointer;
+  background-color: plum;
+}
+
+project-card-back {
+  background-color: purple;
+}
+/*# sourceMappingURL=Projects.css.map */

@@ -22,9 +22,11 @@ class Home extends Component {
     <div className='page' id="Home">
     <div className='slide'>
       {/* <span className={this.props.loading ? 'hide' : 'show'} style={{alignItems: 'center'}}> */}
-        <h1 className={this.props.loading ? 'hide' : 'typewriter'} >Hi there, I'm Claire!</h1>
+        <main>
+        <h1 className={this.props.loading ? 'hide' : 'typewriter1'} >Hi, I'm Claire. </h1>
+        <h1 className={this.props.loading ? 'hide' : 'typewriter2'} > </h1>
         <h4 className={this.props.loading ? 'hide' : 'headline'} >I'm a full-stack developer.</h4>
-
+        </main>
       {/* </span> */}
 
     </div> {/*slide*/}
