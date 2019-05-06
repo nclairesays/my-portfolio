@@ -1,7 +1,8 @@
 const initialState = {
-    navItems: [ 'Home', 'About', 'Skills', 'Projects', 'Resume', 'Contact' ],
+    navItems: [ 'Home', 'About', 'Projects', 'Resume', 'Contact' ], // 'Skills',
     expanded: false,
     loading: true,
+    showModal: false,
     skills: [
         'https://www.armia.com/project/img/rubyrails.png',
         'http://www.sclance.com/pngs/react-logo-png/react_logo_png_1140479.png',
@@ -38,6 +39,9 @@ export const rootReducer = (state = initialState, { type, payload }) => {
             return {...state, expanded: payload.expanded}
         case 'TOGGLE_LOAD':
             return {...state, loading: payload.loading}
+        case 'TOGGLE_MODAL': {
+            return {...state, showModal: payload.showModal}
+        }
         default:
             return state 
     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { toggleMenu } from '../redux/actions/navActionCreators';
+import { toggleMenu } from '../redux/actions/navAction';
 
 class NavBar extends Component {
 

@@ -68,7 +68,15 @@
 
 
 
-
+#social-media {
+  background-color: red;
+  flex: 1;
+  display: flex;
+  .media {
+    background-color: blue;
+    
+  }
+}
 
 @media screen and (max-width: 600px) {
   .contact-container {
