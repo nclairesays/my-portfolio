@@ -6,21 +6,37 @@ import '../styles/components/Modal.scss'
 
 
 class Modal extends React.Component{
-   render(){
-       const {description} = this.props
 
-       console.log('hit modal')
-       return (
-        <div className={'modal'}>
-            <button className={'close-modal'} onClick={this.props.toggleModal}>close modal</button>
-            
-            <div className={'modal-container'}>
-                <ModalImageContainer />
-                <ModalDescription description={description} />
+    handleClick = (e) => {
+        if(e.target.className === 'modal'){
+            this.props.toggleModal()
+        }
+    }
+
+    // handleHover = (e) => {
+    //     if(e.target.className === 'modal-image-container' || e.target.className === 'modal-description'){
+    //         document.querySelector('.modal').setAttribute('style', 'background-color: red')
+    //     }
+    // }
+    
+    render(){
+        const {description} = this.props
+
+        window.onClick = (e) => {
+            console.log('window.onClick ', e)
+        }
+
+        console.log('hit modal')
+        return (
+            <div className={'modal'} onClick={this.handleClick}>
+                
+                <div className={'modal-container'}> {/*onMouseOut={this.handleHover}*/}
+                    <ModalImageContainer />
+                    <ModalDescription description={description} />
+                </div>
             </div>
-        </div>
-       )
-   }
+        )
+    }
 }
 
 const mapStateToProps = (state) => ({

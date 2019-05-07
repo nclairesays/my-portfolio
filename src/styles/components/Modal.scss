@@ -11,38 +11,43 @@
     display:flex;
     justify-content:  center;
     align-items: center;
-
-    
-    .close-modal {
-        height: 20px;
-    }
-    
-    .modal-container {
-        background-color: palevioletred;
-        width: 70%;
-        height: 70%;
-        
-    }
-
 }
 
 
-
-
-.modal-description {
-    background-color: peru;
-    height: 30%;
-    width: 100%
-}
-
-.modal-image-container {
-    background-color: royalblue;
-    width: 100%;
+.modal-container {
+    background-color: palevioletred;
+    width: 70%;
     height: 70%;
+     
+    .modal-x-button {
+        height: 100px;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        background-color: white;
+    }
+
+    .modal-description {
+        background-color: peru;
+        height: 30%;
+        width: 100%
+    }
+      
+    .modal-image-container {
+        background-color: royalblue;
+        width: 100%;
+        height: 70%;
+
+        .modal-image {
+            background-color: green;
+            height: 90%;
+            width: 90%;
+        }
+    }
 }
 
-.modal-image {
-    background-color: green;
-    height: 90%;
-    width: 90%;
-}
+
+
+

@@ -19,29 +19,35 @@
           align-items: center;
 }
 
-.modal .close-modal {
-  height: 20px;
-}
-
-.modal .modal-container {
+.modal-container {
   background-color: palevioletred;
   width: 70%;
   height: 70%;
 }
 
-.modal-description {
+.modal-container .modal-x-button {
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.modal-container .modal-description {
   background-color: peru;
   height: 30%;
   width: 100%;
 }
 
-.modal-image-container {
+.modal-container .modal-image-container {
   background-color: royalblue;
   width: 100%;
   height: 70%;
 }
 
-.modal-image {
+.modal-container .modal-image-container .modal-image {
   background-color: green;
   height: 90%;
   width: 90%;
