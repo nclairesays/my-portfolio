@@ -7,19 +7,18 @@
     background-image: url('../assets/bg-sky4.png');
     background-repeat:  repeat-x;
     background-size:contain;
-    background-color: rgba(21, 253, 0, 0.3);
+    // background-color: rgba(21, 253, 0, 0.3);
 
 
     .page {
-        height:100%;
+        height:98vh;
         width: 100vw;
         display: flex;  
         justify-content: center;
         flex: 0 0 auto;
-        background-color: rgba(247, 251, 0, .3);
+        // background-color: rgba(247, 251, 0, .3);
 
         .slide {
-            background-color: $transparent-background;
             margin-top: 3vh;
             width: 90%;
             height: 95%;
@@ -30,11 +29,12 @@
             flex-direction: column;
             padding: .5em 2em .5em 2em;
             
+            // background-color: $transparent-background;
             
         
             & h1 {
                 font-family: monospace;
-                font-size: 4em;
+                font-size: 5vw;
                 // color: $primary-color;
                 color: white;
                 letter-spacing: 0.15em;
@@ -43,7 +43,6 @@
             }
 
             & > main {
-                background-color: $transparent-background3;
                 display: flex;
                 // flex-flow: row wrap;
                 flex: 1 1 auto;
@@ -52,14 +51,13 @@
                 color: $text-dark-brown;
                 height: 100%;
                 width: 100%;
+                // background-color: $transparent-background3;
+
                 
             } 
         }
     }
-    
-
 }
-
 
 
 .hide {
@@ -82,3 +80,17 @@
 .clear {
 clear: both;
 }
+
+// ask about this... font-size isn't being dynamaic
+@media screen and (min-width: 1000px) {
+   h1 {
+       font-size:4em;
+   } 
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size:80vw;
+        // background-color: pink;
+    } 
+ }

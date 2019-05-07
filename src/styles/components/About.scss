@@ -16,11 +16,11 @@
 }
 .aboutMeDetails {
     flex: 1.5;
-    height: 96%;
+    height: 100%;
     width: 100%;
 
-    overflow-y:scroll;
+    overflow-y:auto;
     text-align: left;
-    padding: 2%;
+    padding-left: 1em;
     background-color: $transparent-background;
 }

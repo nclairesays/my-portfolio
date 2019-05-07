@@ -14,7 +14,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-x: visible;
+}
+
+#Home > .slide > main h1 {
+  margin: 0;
+}
+
+#Home > .slide > main h4 {
+  font-size: 3vw;
 }
 
 .typewriter1, .typewriter2 {
@@ -41,7 +48,6 @@
 }
 
 .typewriter2 {
-  color: red;
   -webkit-animation: typing 2s steps(25, end) 2s, blink-caret 0.5s linear 13;
           animation: typing 2s steps(25, end) 2s, blink-caret 0.5s linear 13;
   width: 8em;
