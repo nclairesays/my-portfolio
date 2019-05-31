@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Slide  from './Slide'
-// import '../styles/components/Projects.scss'
 import ProjectCardContainer from './ProjectCardContainer';
 import Modal from './Modal'
 import { toggleModal } from '../redux/actions/modalAction'
@@ -22,20 +21,16 @@ class Projects extends Component {
   }
 
   mainContent = () => {
-    console.log(this.state)
+    console.log(this.props)
     return <>
-    
-      <ProjectCardContainer key='b2b' toggleModal={() => this.handleClick()}/>
-      {/* <ProjectCardContainer key='jTreender' toggleModal={() => this.handleClick()}/>
-      <ProjectCardContainer key='meetupEd' toggleModal={() => this.handleClick()}/> */}
-
-      {
-        this.state.showModal
-        ? <Modal toggleModal={this.handleClick}/>
-        : null
+      { this.props.projects.map( project => 
+        <ProjectCardContainer project={project} toggleModal={() => this.handleClick()}/>
+      )}
+      
+      { this.state.showModal &&
+        <Modal toggleModal={this.handleClick}/>
       }
-    </>
-     
+    </> 
   }
 
 
@@ -43,7 +38,8 @@ class Projects extends Component {
 
 
 const mapStateToProps = (state) => ({
-  toggleModal: state.showModal
+  toggleModal: state.showModal,
+  projects: state.projects
 })
 
 const mapDispatchToProps = (dispatch) => ({

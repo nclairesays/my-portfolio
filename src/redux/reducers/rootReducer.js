@@ -15,22 +15,46 @@ const initialState = {
         'https://www.essentialdesigns.net/wp-content/uploads/2017/10/heartreact.png',
     ],
     projects: [
-        { b2b: {
+        {   
+            key: 'b2b',
             title: 'Babbles to Babbles',
             description: 'description of b2b',
-            images: []
-        }},
-        { jTreender: {
+            images: [],
+            url: {
+                deployed: 'https://protected-cliffs-89398.herokuapp.com/',
+                github: 'https://github.com/nclairesays/babbles-to-babbles-backend/',
+                ghServer: 'https://github.com/nclairesays/babbles-to-babbles-backend/',
+                ghClient: 'https://github.com/nclairesays/babbles-to-babbles-frontend'
+            }
+        },
+        {   
+            key: 'jTreender',
             title: 'Jackson Treender',
             description: 'description of jTreender',
-            images: []
-        }},
-        { meetupEd: {
+            images: [],
+            url: {
+                deployed: 'https://www.youtube.com/watch?v=1VYzxZ2uxXo',
+                ghServer: 'https://github.com/nclairesays/jackson-treender-backend',
+                ghClient: ' https://github.com/nclairesays/jackson-treender-frontend'
+            },
+        },
+        {   
+            key: 'jobsForHope',
+            title: 'Jobs For Hope',
+            description: 'description of meetupEd',
+            images: [],
+            url: {
+                deployed: 'https://jobs-for-hope.herokuapp.com',
+                gihub: 'https://github.com/hackforla/jobs-for-hope/tree/claire'
+            }
+        },  
+        {   
+            key: '',
             title: 'Meetup Education',
             description: 'description of meetupEd',
-            images: []
-        }},       
-
+            images: [],
+            url: {}
+        },      
     ]
 }
 export const rootReducer = (state = initialState, { type, payload }) => {

@@ -12,18 +12,18 @@ export default class ProjectCardContainer extends Component {
     }
 
     render() {
-            return (
-            <div className={"project-card-container"} 
-                onMouseEnter={this.handleToggle}
-                onMouseLeave={this.handleToggle}
-                onClick={this.props.toggleModal}
-                >
-                {
-                    this.state.front 
-                    ? <ProjectCardFront /> 
-                    : <ProjectCardBack />
-                }
-            </div>
-        );
+        return (
+        <div className={"project-card-container"} 
+            onMouseEnter={this.handleToggle}
+            onMouseLeave={this.handleToggle}
+            onClick={this.props.toggleModal}
+            >
+            {
+                this.state.front 
+                ? <ProjectCardFront {...this.props.project}/> 
+                : <ProjectCardBack {...this.props.project} />
+            }
+        </div>
+    );
     }
 }
