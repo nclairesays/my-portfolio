@@ -1,6 +1,6 @@
 @import '../variables';
 
-#Home > .slide > main {
+#Home main {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -8,14 +8,15 @@
   // overflow-x: visible;
   & h1 {
     margin: 0;
+    font-size: 8vw;
+    
   }
   & h4 {
-    font-size: 3vw
+    font-size: 4vw;
   }
 
 }
 %typewriter {
-  // flex-wrap: wrap;
   width: 100%;
   font-size: 4em;
   display: inline-block;

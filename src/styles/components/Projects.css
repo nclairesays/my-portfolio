@@ -1,11 +1,18 @@
+#Projects main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .project-card-container {
   width: 10em;
-  height: 10em;
   cursor: pointer;
-  background-color: plum;
+  background-color: pink;
 }
 
 project-card-back {
-  background-color: purple;
+  background-color: pink;
 }
 /*# sourceMappingURL=Projects.css.map */

@@ -5,17 +5,19 @@
     position: absolute;
     display: flex;
     background-image: url('../assets/bg-sky4.png');
-    background-repeat:  repeat-x;
-    background-size:contain;
-    // background-color: rgba(21, 253, 0, 0.3);
-
+    background-repeat: repeat-x;
+    background-size: contain;
+    
 
     .page {
         height:98vh;
         width: 100vw;
+        min-width: 300px;
         display: flex;  
         justify-content: center;
         flex: 0 0 auto;
+        overflow: hidden;
+
         // background-color: rgba(247, 251, 0, .3);
 
         .slide {
@@ -28,13 +30,14 @@
             display: flex;
             flex-direction: column;
             padding: .5em 2em .5em 2em;
+
             
             // background-color: $transparent-background;
             
         
             & h1 {
                 font-family: monospace;
-                font-size: 5vw;
+                font-size: 40px;
                 // color: $primary-color;
                 color: white;
                 letter-spacing: 0.15em;
@@ -81,6 +84,26 @@
 clear: both;
 }
 
+
+ 
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width : 640px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .scrolling-wrapper {
+      display: block;
+      height: auto;
+      background-size: 500% 100vh;
+      background-position-x: 90%;
+      position: relative;
+    }
+    // .page {
+    //   height: auto;
+    // }
+  }
+
+
 // ask about this... font-size isn't being dynamaic
 @media screen and (min-width: 1000px) {
    h1 {
@@ -94,3 +117,4 @@ clear: both;
         // background-color: pink;
     } 
  }
+

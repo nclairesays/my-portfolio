@@ -8,5 +8,6 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   background-color: #0f8a7c;
   overflow-y: auto;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,10 +1,14 @@
+#Projects main {
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .project-card-container {
     width: 10em;
-    height: 10em;
+    // min-height: 20em;
     cursor: pointer;
-    background-color: plum;
+    background-color: pink;
 }
 
 project-card-back {
-    background-color: purple;
+    background-color: pink;
 }

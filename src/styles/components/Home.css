@@ -1,6 +1,6 @@
 /*Variables*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-#Home > .slide > main {
+#Home main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -16,12 +16,13 @@
           flex-direction: column;
 }
 
-#Home > .slide > main h1 {
+#Home main h1 {
   margin: 0;
+  font-size: 8vw;
 }
 
-#Home > .slide > main h4 {
-  font-size: 3vw;
+#Home main h4 {
+  font-size: 4vw;
 }
 
 .typewriter1, .typewriter2 {

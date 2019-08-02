@@ -18,6 +18,7 @@
 .scrolling-wrapper .page {
   height: 98vh;
   width: 100vw;
+  min-width: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,6 +33,7 @@
 .scrolling-wrapper .page .slide {
   margin-top: 3vh;
   width: 90%;
+  height: 95%;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
@@ -48,14 +50,14 @@
 
 .scrolling-wrapper .page .slide h1 {
   font-family: monospace;
-  font-size: 4em;
+  font-size: 5vw;
   color: white;
   letter-spacing: 0.15em;
   margin: 0 0 .2em 0;
   text-shadow: 4px 4px #0f8a7c, -1px 1px #0f8a7c, 1px -1px #0f8a7c, -1px -1px #0f8a7c;
 }
 
-.scrolling-wrapper .page .slide main {
+.scrolling-wrapper .page .slide > main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +66,8 @@
           flex: 1 1 auto;
   font-size: 1.2em;
   color: #3a2a00;
+  height: 100%;
+  width: 100%;
 }
 
 .hide {
@@ -85,6 +89,18 @@
 
 .clear {
   clear: both;
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 80vw;
+  }
 }
 
 /* @import "../_variables.scss"; */
@@ -274,10 +290,17 @@ li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-x: visible;
 }
 
-.typewriter1, .typerwriter2 {
+#Home > .slide > main h1 {
+  margin: 0;
+}
+
+#Home > .slide > main h4 {
+  font-size: 3vw;
+}
+
+.typewriter1, .typewriter2 {
   width: 100%;
   font-size: 4em;
   display: inline-block;
@@ -290,19 +313,23 @@ li:hover {
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
   /* Adjust as needed */
-  -webkit-animation: typing 2s steps(25, end), blink-caret 0.5s linear 14;
-          animation: typing 2s steps(25, end), blink-caret 0.5s linear 14;
   -webkit-animation-fill-mode: none;
           animation-fill-mode: none;
 }
 
-.typerwriter2 {
-  color: red;
-  -webkit-animation-name: typing2;
-          animation-name: typing2;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+.typewriter1 {
+  width: 11em;
+  -webkit-animation: typing 4s steps(25, end), blink-caret 0.5s linear 12;
+          animation: typing 4s steps(25, end), blink-caret 0.5s linear 12;
+}
+
+.typewriter2 {
+  -webkit-animation: typing 2s steps(25, end) 2s, blink-caret 0.5s linear 13;
+          animation: typing 2s steps(25, end) 2s, blink-caret 0.5s linear 13;
+  width: 8em;
   opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .headline {
@@ -332,6 +359,7 @@ li:hover {
 @-webkit-keyframes typing {
   from {
     width: 0;
+    opacity: 1;
   }
   to {
     opacity: 1;
@@ -341,6 +369,7 @@ li:hover {
 @keyframes typing {
   from {
     width: 0;
+    opacity: 1;
   }
   to {
     opacity: 1;
@@ -405,9 +434,11 @@ li:hover {
   -webkit-box-flex: 1.5;
       -ms-flex: 1.5;
           flex: 1.5;
-  overflow: auto;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
   text-align: left;
-  padding: 1em;
+  padding-left: 1em;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -447,9 +478,13 @@ li:hover {
   background-repeat: no-repeat;
 }
 
+#project main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .project-card-container {
   width: 10em;
-  height: 10em;
   cursor: pointer;
   background-color: plum;
 }
@@ -508,7 +543,7 @@ project-card-back {
 }
 
 .contact-container form .contact-input {
-  margin-bottom: .5em;
+  margin-bottom: 1em;
   padding: .4em .8em;
   border-radius: 0.2em;
   border: 1px #ffbc00 solid;
@@ -565,7 +600,7 @@ project-card-back {
   background-color: blue;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .contact-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -598,29 +633,35 @@ project-card-back {
           align-items: center;
 }
 
-.modal .close-modal {
-  height: 20px;
-}
-
-.modal .modal-container {
+.modal-container {
   background-color: palevioletred;
   width: 70%;
   height: 70%;
 }
 
-.modal-description {
+.modal-container .modal-x-button {
+  height: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.modal-container .modal-description {
   background-color: peru;
   height: 30%;
   width: 100%;
 }
 
-.modal-image-container {
+.modal-container .modal-image-container {
   background-color: royalblue;
   width: 100%;
   height: 70%;
 }
 
-.modal-image {
+.modal-container .modal-image-container .modal-image {
   background-color: green;
   height: 90%;
   width: 90%;

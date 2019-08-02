@@ -5,7 +5,7 @@ import Modal from './Modal'
 import { toggleModal } from '../redux/actions/modalAction'
 import { connect } from 'react-redux'
 class Projects extends Component {
-  state={
+  state = {
     showModal: false
   }
 
