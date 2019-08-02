@@ -1,10 +1,10 @@
-/* @import "../_variables.scss"; */
+/*Variables*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #nav-bar, #nav-burger {
   position: fixed;
-  background-image: url(../../assets/sun.svg);
+  background-image: url(../assets/sun.svg);
   background-repeat: no-repeat;
   background-size: stretch;
-  color: #664b00;
   z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,7 +33,7 @@
   display: -ms-flexbox;
   display: flex;
   line-height: 1.3em;
-  font-size: 1.3em;
+  font-size: .9em;
   font-weight: 700;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -85,6 +85,7 @@ li:hover {
           text-decoration-color: white;
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
+  letter-spacing: .4em;
 }
 
 .burger-container {
@@ -143,14 +144,13 @@ li:hover {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* If the screen size is 800px wide or less,(smaller screens)*/
-@media screen and (max-width: 800px) {
-  #nav-bar {
-    /* display: none; */
-    font-size: 1.1em;
+@media screen and (max-width: 640px) {
+  .nav-items {
+    font-size: 1.2em;
   }
 }
 
+/* If the screen size is 800px wide or less,(smaller screens)*/
 /* 
 @media screen and (min-width: 1500px) {
     #navbar{
