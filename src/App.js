@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavBar, Home, About, Skills, Projects, Contact } from './components';
+import { NavBar, Home, About, Projects, Contact } from './components';
 import { connect } from 'react-redux'
 import "./styles/all.scss"
 

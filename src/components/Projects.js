@@ -9,12 +9,6 @@ class Projects extends Component {
     showModal: false
   }
 
-  render() {
-    return (
-      <Slide slideID={'Projects'} slideTitle={'Projects'} mainContent={this.mainContent()} />
-    )
-  }
-
   handleClick = () => {
     console.log('handle click projects')
     this.setState({ showModal: !this.state.showModal })
@@ -33,14 +27,19 @@ class Projects extends Component {
     </> 
   }
 
-
+  render() {
+    return (
+      <Slide slideID={'Projects'} slideTitle={'Projects'} mainContent={this.mainContent()} />
+    )
+  }
 }
 
 
-const mapStateToProps = (state) => ({
-  toggleModal: state.showModal,
-  projects: state.projects
-})
+const mapStateToProps = (state) => {
+  return {
+    toggleModal: state.showModal,
+    projects: state.projects
+}}
 
 const mapDispatchToProps = (dispatch) => ({
   toggleModal: (arg) => dispatch(toggleModal(arg)),
