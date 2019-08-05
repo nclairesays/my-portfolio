@@ -36,7 +36,10 @@ class NavBar extends Component {
             </div>
           <ul className="nav-items">
             {this.props.navItems.map( item => (
-              <li key={item} onClick={() => this.scrollIntoView("#"+item)}>
+              <li key={item} onClick={() => {
+                this.scrollIntoView("#"+item)
+                this.onToggle()
+              }}>
                 {item}
               </li>))
             }  
