@@ -15,16 +15,29 @@ class Projects extends Component {
   }
 
   mainContent = () => {
-    console.log(this.props)
+    const completed = []
+    const ongoing = []
+
+    this.props.projects.forEach( p => {
+      if (p.status === "completed") {
+        completed.push(p)
+      } else {
+        ongoing.push(p)
+      }
+    })
+
     return <>
-      { this.props.projects.map( project => 
-        <ProjectCardContainer project={project} toggleModal={() => this.handleClick()}/>
-      )}
-      
+      <div className="projects-wrapper">
+      { completed.map( project => <ProjectCardContainer project={project} toggleModal={() => this.handleClick()}/> ) }
+      </div>
+      <h3>Ongoing...</h3>
+      <div className="projects-wrapper">
+      { ongoing.map( project => <ProjectCardContainer project={project} toggleModal={() => this.handleClick()}/> ) }
+      </div>
       { this.state.showModal &&
         <Modal toggleModal={this.handleClick}/>
       }
-    </> 
+    </>
   }
 
   render() {
@@ -33,7 +46,6 @@ class Projects extends Component {
     )
   }
 }
-
 
 const mapStateToProps = (state) => {
   return {

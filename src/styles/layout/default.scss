@@ -11,6 +11,7 @@
 
     .page {
         height:98vh;
+        min-height: 98vh;
         width: 100vw;
         min-width: 300px;
         display: flex;  
@@ -24,6 +25,7 @@
             margin-top: 3vh;
             width: 90%;
             height: 95%;
+            min-height: 90vh;
             align-content: center;
             text-align: center;
             border-radius: 3rem;
@@ -38,7 +40,7 @@
             & h1 {
                 font-family: monospace;
                 // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
-                font-size: calc(24px + (48 - 24) * ((100vw - 100px) / (1200 - 300)) ;
+                font-size: calc(24px + (48 - 24) * ((100vw - 100px) / (1200 - 300))) ;
                 // color: $primary-color;
                 color: white;
                 letter-spacing: 0.15em;

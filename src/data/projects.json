@@ -16,44 +16,88 @@
     ],
     "projects": [
         {
+            "key": "jobs-for-hope",
+            "title": "Jobs For Hope",
+            "description": "description of Jobs for Hope",
+            "images": ["./src/assets/screen-shots/jobs-for-hope/preview.png"],
+            "directory": "jobs-for-hope",
+            "url": {
+                "deployed": "https://jobs-for-hope.herokuapp.com",
+                "gihub": "https://github.com/hackforla/jobs-for-hope/tree/claire"
+            }, 
+            "status": "completed"
+        },
+        {
             "key": "b2b",
             "title": "Babbles to Babbles",
             "description": "description of b2b",
             "images": [],
+            "directory": "jobs-for-hope",
             "url": {
                 "deployed": "https://protected-cliffs-89398.herokuapp.com/",
                 "github": "https://github.com/nclairesays/babbles-to-babbles-backend/",
                 "ghServer": "https://github.com/nclairesays/babbles-to-babbles-backend/",
                 "ghClient": "https://github.com/nclairesays/babbles-to-babbles-frontend"
-            }
+            }, 
+            "status": "completed"
         },
         {
             "key": "jTreender",
             "title": "Jackson Treender",
             "description": "description of jTreender",
+            "directory": "jobs-for-hope",            
             "images": [],
             "url": {
                 "deployed": "https://www.youtube.com/watch?v=1VYzxZ2uxXo",
                 "ghServer": "https://github.com/nclairesays/jackson-treender-backend",
                 "ghClient": " https://github.com/nclairesays/jackson-treender-frontend"
-            }
-        },
-        {
-            "key": "jobsForHope",
-            "title": "Jobs For Hope",
-            "description": "description of meetupEd",
-            "images": [],
-            "url": {
-                "deployed": "https://jobs-for-hope.herokuapp.com",
-                "gihub": "https://github.com/hackforla/jobs-for-hope/tree/claire"
-            }
+            }, 
+            "status": "completed"
         },
         {
             "key": "",
             "title": "Meetup Education",
             "description": "description of meetupEd",
             "images": [],
-            "url": {}
+            "directory": "jobs-for-hope",
+            "url": {}, 
+            "status": "completed"
+        },
+        {
+            "key": "",
+            "title": "This Portfolio Site",
+            "description": "description of this portfolio site",
+            "images": [],
+            "directory": "jobs-for-hope",
+            "url": {}, 
+            "status": "ongoing"
+        },
+        {
+            "key": "",
+            "title": "Transit Demand Management (TDM) Calculator",
+            "description": "description of TDM Calculator",
+            "images": [],
+            "directory": "jobs-for-hope",
+            "url": {}, 
+            "status": "ongoing"
+        },
+        {
+            "key": "",
+            "title": "Six Degrees of Impact",
+            "description": "description of meetupEd",
+            "images": [],
+            "directory": "jobs-for-hope",
+            "url": {}, 
+            "status": "ongoing"
+        },
+        {
+            "key": "",
+            "title": "Thrift Theaters",
+            "description": "description of thrift theaters",
+            "images": [],
+            "directory": "jobs-for-hope",
+            "url": {},
+            "status": "ongoing"
         }
     ]
 }
