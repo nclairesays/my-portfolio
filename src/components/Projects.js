@@ -10,7 +10,6 @@ class Projects extends Component {
   }
 
   handleClick = () => {
-    console.log('handle click projects')
     this.setState({ showModal: !this.state.showModal })
   }
 
@@ -28,11 +27,11 @@ class Projects extends Component {
 
     return <>
       <div className="projects-wrapper">
-      { completed.map( project => <ProjectCardContainer project={project} toggleModal={() => this.handleClick()}/> ) }
+        { completed.map( project => <ProjectCardContainer key={project.key} project={project} toggleModal={() => this.handleClick()}/> ) }
       </div>
       <h3>Ongoing...</h3>
       <div className="projects-wrapper">
-      { ongoing.map( project => <ProjectCardContainer project={project} toggleModal={() => this.handleClick()}/> ) }
+      { ongoing.map( project => <ProjectCardContainer  key={project.key} project={project} toggleModal={() => this.handleClick()}/> ) }
       </div>
       { this.state.showModal &&
         <Modal toggleModal={this.handleClick}/>

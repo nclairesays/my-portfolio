@@ -18,6 +18,7 @@
         {
             "key": "jobs-for-hope",
             "title": "Jobs For Hope",
+            "tech": ["React", "Node.js", "PostgreSQL", "AWS", "Python", "SCSS/SASS"],
             "description": "description of Jobs for Hope",
             "images": ["./src/assets/screen-shots/jobs-for-hope/preview.png"],
             "directory": "jobs-for-hope",
@@ -28,24 +29,11 @@
             "status": "completed"
         },
         {
-            "key": "b2b",
-            "title": "Babbles to Babbles",
-            "description": "description of b2b",
-            "images": [],
-            "directory": "jobs-for-hope",
-            "url": {
-                "deployed": "https://protected-cliffs-89398.herokuapp.com/",
-                "github": "https://github.com/nclairesays/babbles-to-babbles-backend/",
-                "ghServer": "https://github.com/nclairesays/babbles-to-babbles-backend/",
-                "ghClient": "https://github.com/nclairesays/babbles-to-babbles-frontend"
-            }, 
-            "status": "completed"
-        },
-        {
             "key": "jTreender",
             "title": "Jackson Treender",
+            "tech": ["React-Native", "Redux", "Ruby on Rails", "SQLite3", "CSS"],
             "description": "description of jTreender",
-            "directory": "jobs-for-hope",            
+            "directory": "jobs-for-hope",
             "images": [],
             "url": {
                 "deployed": "https://www.youtube.com/watch?v=1VYzxZ2uxXo",
@@ -55,8 +43,9 @@
             "status": "completed"
         },
         {
-            "key": "",
+            "key": "meetupEd",
             "title": "Meetup Education",
+            "tech": ["React", "Ruby on Rails", "SQLite3", "Semantic UI"],
             "description": "description of meetupEd",
             "images": [],
             "directory": "jobs-for-hope",
@@ -64,26 +53,44 @@
             "status": "completed"
         },
         {
-            "key": "",
-            "title": "This Portfolio Site",
+            "key": "b2b",
+            "title": "Babbles to Babbles",
+            "tech": ["Vanilla Javascript", "Ruby on Rails", "SQLite3", "Bootstrap"],
+            "description": "description of b2b",
+            "images": [],
+            "directory": "babbles-to-babbles",
+            "url": {
+                "deployed": "https://protected-cliffs-89398.herokuapp.com/",
+                "github": "https://github.com/nclairesays/babbles-to-babbles-backend/",
+                "ghServer": "https://github.com/nclairesays/babbles-to-babbles-backend/",
+                "ghClient": "https://github.com/nclairesays/babbles-to-babbles-frontend"
+            }, 
+            "status": "completed"
+        },
+        {
+            "key": "myPortfolio",
+            "title": "This Site",
+            "tech": ["React", "Redux", "SCSS/SASS"],
             "description": "description of this portfolio site",
             "images": [],
-            "directory": "jobs-for-hope",
+            "directory": "my-porfolio",
             "url": {}, 
             "status": "ongoing"
         },
         {
             "key": "",
-            "title": "Transit Demand Management (TDM) Calculator",
+            "title": "TDM Calculator",
             "description": "description of TDM Calculator",
+            "tech": ["React", "Node.js", "SCSS/SASS"],
             "images": [],
             "directory": "jobs-for-hope",
             "url": {}, 
             "status": "ongoing"
         },
         {
-            "key": "",
+            "key": "sixDegreesofImpact",
             "title": "Six Degrees of Impact",
+            "tech": ["TBD"],
             "description": "description of meetupEd",
             "images": [],
             "directory": "jobs-for-hope",
@@ -91,8 +98,9 @@
             "status": "ongoing"
         },
         {
-            "key": "",
+            "key": "thriftTheaters",
             "title": "Thrift Theaters",
+            "tech": ["TBD"],
             "description": "description of thrift theaters",
             "images": [],
             "directory": "jobs-for-hope",

@@ -1,29 +1,16 @@
-import React, { Component } from "react";
-import ProjectCardFront from "./ProjectCardFront";
-import ProjectCardBack from "./ProjectCardBack";
+import React from "react";
+import ProjectCardInfo from "./ProjectCardInfo";
 
-export default class ProjectCardContainer extends Component {
-    state = {
-        front: true
-    };
-
-    handleToggle = () => {
-        this.setState({ front: !this.state.front })
-    }
-
-    render() {
+const ProjectCardContainer = ({project, toggleModal}) => {
         return (
-        <div className={"project-card-container"} 
-            onMouseEnter={this.handleToggle}
-            onMouseLeave={this.handleToggle}
-            onClick={this.props.toggleModal}
-            >
-            {
-                this.state.front 
-                ? <ProjectCardFront {...this.props.project}/> 
-                : <ProjectCardBack {...this.props.project} />
-            }
+        <div 
+            className={"project-card-container"} 
+            onClick={toggleModal}
+            style={{backgroundImage: `url(./projects/${project.directory}/preview.png)`}} 
+        >
+            <ProjectCardInfo {...project}/>
         </div>
     );
-    }
 }
+
+export default  ProjectCardContainer

@@ -1,12 +1,11 @@
 import React from 'react'
-// import preview from '../assets/${props.title}/preview.png'
+import ProjectCardBack from './ProjectCardInfo'
 
-
-const ProjectCardFront = ({key, title, description, images, directory, url, status}) => {
+const ProjectCardFront = (props) => {
 
     return (
-        <div className={'project-card-front'}>
-            <div className="project-preview" style={{backgroundImage: `url(./projects/${directory}/preview.png)`}} />
+        <div className="project-card project-front" style={{backgroundImage: `url(./projects/${props.directory}/preview.png)`, color: 'white'}} >
+            <ProjectCardBack {...props}/>
         </div>
     )
 }

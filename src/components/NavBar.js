@@ -24,10 +24,19 @@ class NavBar extends Component {
   }
 
   render() {
-    const className = this.props.expanded ? 'x-container change' : 'burger-container'
+    console.log('expanded 2', this.props.expanded)
+    const className = this.props.expanded ? 'burger-container' : 'x-container change'
     return (
       this.props.expanded 
       ? 
+        <div id='nav-burger' onClick={this.onToggle}>
+            <div className={className}>
+              <div className="bar1"></div>
+              <div className="bar2"></div>
+              <div className="bar3"></div>
+            </div>
+        </div>
+      :
         <div id="nav-bar" >
             <div className={className} onClick={this.onToggle}> 
               <div className="bar1"></div>
@@ -42,29 +51,24 @@ class NavBar extends Component {
               }}>
                 {item}
               </li>))
-            }  
-            
+            }
           </ul>
-        </div>
-      :
-        <div id='nav-burger' onClick={this.onToggle}>
-            <div className={className}>
-              <div className="bar1"></div>
-              <div className="bar2"></div>
-              <div className="bar3"></div>
-            </div>
         </div>
     )
   }
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state) => {
+  console.log('state expanded 1', state.expanded)
+  return {
   navItems: state.navItems,
   expanded: state.expanded
-})
+  }
+}
 
 const mapDispatchToProps = (dispatch) => ({
   toggleMenu: (arg) => dispatch(toggleMenu(arg)),
 })
+
 export default connect(mapStateToProps, mapDispatchToProps) (NavBar)
 
