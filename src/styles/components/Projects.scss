@@ -10,12 +10,17 @@
 }
 
 .project-card-container {
-    min-width: 5em;
-    min-height: 5em;
+    min-width: 5.1em;
+    min-height: 7em;
     cursor: pointer;
-    width: 200px;
-    height: 200px;
+    // width: 200px;
+    // height: 200px;
+    width: 18vw;
+    height: 20vh;
+    // width: 20%;
+    // height: 10%;
     background-size: cover;
+    background-position: center;
     position: relative;
     border-radius: 10%;
     margin: .2em;
@@ -44,14 +49,14 @@
         }
 
         .preview-tech {
-            font-size: .6em;
+            font-size: .5em;
             position: relative;
-            bottom: -30px;
+            top: 2em;
         }
 
         .preview-description {
             position: absolute;
-            top: 110px;
+            top: 65px;
             opacity: 0;
             font-size: .7em;
         }
@@ -68,14 +73,14 @@
 
         .project-info {
             transition-duration: .5s;
-            transform: translate(0, -30px);
+            transform: translate(0, -.5em);
 
             .preview-title {
                 font-size: .8em;
             }
 
             .preview-tech {
-                transform: translate(0, -30px);
+                transform: translate(0, -25px);
                 font-size: .5em;
             }
             
@@ -93,4 +98,16 @@
     width: 200px;
     height: 200px;
     background-size: cover;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width : 640px) {
+    #Projects {
+        height: auto;
+    }
+    .project-card-container {
+        width: 30vw;
+    }
+
 }

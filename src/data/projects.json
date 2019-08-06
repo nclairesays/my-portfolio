@@ -31,7 +31,7 @@
         {
             "key": "jTreender",
             "title": "Jackson Treender",
-            "tech": ["React-Native", "Redux", "Ruby on Rails", "SQLite3", "CSS"],
+            "tech": ["React-Native", "Redux", "Ruby on Rails", "SQL", "CSS"],
             "description": "description of jTreender",
             "directory": "jobs-for-hope",
             "images": [],
@@ -45,7 +45,7 @@
         {
             "key": "meetupEd",
             "title": "Meetup Education",
-            "tech": ["React", "Ruby on Rails", "SQLite3", "Semantic UI"],
+            "tech": ["React", "Ruby on Rails", "SQL", "Semantic UI"],
             "description": "description of meetupEd",
             "images": [],
             "directory": "jobs-for-hope",
@@ -55,7 +55,7 @@
         {
             "key": "b2b",
             "title": "Babbles to Babbles",
-            "tech": ["Vanilla Javascript", "Ruby on Rails", "SQLite3", "Bootstrap"],
+            "tech": ["Vanilla Javascript", "Ruby on Rails", "SQL", "Bootstrap"],
             "description": "description of b2b",
             "images": [],
             "directory": "babbles-to-babbles",
@@ -69,7 +69,7 @@
         },
         {
             "key": "myPortfolio",
-            "title": "This Site",
+            "title": "Portfolio Site",
             "tech": ["React", "Redux", "SCSS/SASS"],
             "description": "description of this portfolio site",
             "images": [],
