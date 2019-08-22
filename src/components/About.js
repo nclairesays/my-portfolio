@@ -1,32 +1,82 @@
-import React, { Component } from 'react'
-import Slide from './Slide'
-import ProfilePic from './ProfilePic'
+import React, { Component } from "react";
+import Slide from "./Slide";
+import ProfilePic from "./ProfilePic";
 
 class About extends Component {
   render() {
     return (
-      <Slide slideID={'About'} slideTitle={`About Me!`} mainContent={this.mainContent()} />
-      )
+      <Slide
+        slideID={"About"}
+        slideTitle={`About Me!`}
+        mainContent={this.mainContent()}
+      />
+    );
   }
   mainContent = () => {
-    return <>
-    
-      <div className={'aboutMeDetails'}> 
-      
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
-
-      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. <b>Fusce nec tellus sed augue semper porta</b>. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. </p>
-
-      <p>Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. <b>Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh</b>. Suspendisse in justo eu magna luctus suscipit. </p>
-
-      <p>At the end of it all, I am just a girl who wants to be part of something bigger than herself. </p>
-      {/* nature, adventure ,
+    return (
+      <>
+        <div className={"aboutMeDetails"}>
+          <p>
+            Hi! I'm Claire! I am many things and here are a few: I'm a Full
+            Stack Developer. I'm also a current Co-host and Open Source
+            Developer for Hack for LA. I'm an active member and volunteer in the
+            LA community.
+            <br />
+            <br />
+            Here are some groups that I've been involved with:
+            <ul>
+              <li>Hack for LA</li>
+              <li>Learn Teach Code</li>
+              <li>Women Who Code</li>
+              <li>Girls in Tech</li>
+              <li>LA Code Day (Judge for High School Hackathon)</li>
+              <li>SGV Linux Group</li>
+              <li>DataConLA</li>
+            </ul>
+          </p>
+          <h4>Some Technical Skills</h4> I am language agnostic and always open
+          to learning new tech! But here is a quick snapshot of the tech I've
+          worked with.
+          <ul>
+            <li>Javascript (React, Node, React Native)</li>
+            <li>Ruby (Ruby on Rails)</li>
+            <li>CSS (SCSS/SASS, Bootstrap, Semantic UI)</li>
+            <li>SQL (PostgreSQL, MS SQL Server) </li>
+            <li>Adobe Illustrator</li>
+            <li>RESTful APIs, Git, Heroku</li>
+          </ul>
+          <p>
+            I'm also experienced in Technical Project Management and have
+            utilized my problem solving and interpersonal skills to support
+            business needs by engaging with all organizational levels. From
+            collecting user requirements to creating UAT test scripts to
+            collaborating with departmental VPs, I successfully managed
+            multi-departmental and cross-functioning projects (Cyber Security
+            Training, Disaster Recovery, and Unified Communications Training
+            Projects).
+          </p>
+          <h4>More on the personal side...</h4>
+          <p>
+            I have a B.S. from the University of Southern California (USC) in
+            Policy, Planning and Development with an emphasis in Policy and Law.
+            (Fight On, Trojans!) I've always loved helping people and giving
+            back to my community and thought government was the way I wanted to
+            do that. However, I always ended up gravitating towards tech over
+            the years. I would love to be able to live and work knowing that my
+            contributions in tech have a positive social and environmental
+            impact on this world.
+          </p>
+          <p>
+            At the end of it all, I am just a girl who wants to be part of
+            something bigger than herself.
+          </p>
+          {/* nature, adventure ,
       journey   I want positive and meaningful .*/}
-      </div>
-      <ProfilePic />
-
-    </>
-  }
+        </div>
+        <ProfilePic />
+      </>
+    );
+  };
 }
 
-export default About
+export default About;
