@@ -12,13 +12,12 @@ class Contact extends Component {
     );
   }
   mainContent = () => {
-    return this.contactForm()
-  }
-  
+    return this.contactForm();
+  };
 
-  handleSubmit = (e) => { 
-    e.preventDefault()
-    console.log('something submited') 
+  handleSubmit = e => {
+    e.preventDefault();
+    console.log("something submited");
   };
 
   contactForm = () => {
@@ -26,38 +25,52 @@ class Contact extends Component {
       <div className="contact-container">
         <form onSubmit={() => this.handleSubmit()}>
           <label htmlFor="name">Name</label>
-          <input id="name" name="name" className="contact-input" placeholder="Como te llamas?"/>
+          <input
+            id="name"
+            name="name"
+            className="contact-input"
+            placeholder="Como te llamas?"
+          />
 
           <label htmlFor="email">Email</label>
-          <input id="email" name="email" className="contact-input" placeholder="So I can reply back!"/>
-          
-          <label htmlFor="phone">Phone</label>
-          <input id="phone" name="phone" className="contact-input"  placeholder="Calls may be faster..." />
+          <input
+            id="email"
+            name="email"
+            className="contact-input"
+            placeholder="So I can reply back!"
+          />
 
+          <label htmlFor="phone">Phone</label>
+          <input
+            id="phone"
+            name="phone"
+            className="contact-input"
+            placeholder="Calls may be faster..."
+          />
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
             className="contact-input"
             form="contact-form"
-            placeholder="Look forward to chatting! :)"
+            placeholder="Look forward to chatting! :)  ;  But actually... This form isn't finished yet. Please email me instead!: ms.clairenguyen@gmail.com"
           />
 
           <input id="submit-btn" type="submit" value="Send" />
-          
         </form>
-       
       </div>
     );
   };
-  
-  socialMedia = () => {
-    return <div id={'social-media'}>
-          <div className={'media'}>Linkedin</div>
-          <div className={'media'}>Github</div>
-    </div>
-  }
-}
 
+  socialMedia = () => {
+    return (
+      <div id={"social-media"}>
+        Connect with me here for now:
+        <div className={"media"}>Linkedin</div>
+        <div className={"media"}>Github</div>
+      </div>
+    );
+  };
+}
 
 export default Contact;

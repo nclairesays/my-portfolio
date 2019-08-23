@@ -21,7 +21,7 @@ const ProjectCardInfo = ({
       <div className={"preview-tech"}> {displayTech()}</div>
       <span className={"preview-description"}>
         <hr />
-        TBD: {description}
+        TBD: {description}; github.com/nclairesays
       </span>
     </div>
   );
