@@ -21,7 +21,7 @@ const ProjectCardInfo = ({
       <div className={"preview-tech"}> {displayTech()}</div>
       <span className={"preview-description"}>
         <hr />
-        {description}
+        TBD: {description}
       </span>
     </div>
   );
