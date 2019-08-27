@@ -16,12 +16,12 @@ const ProjectCardInfo = ({
   };
 
   return (
-    <div className={"project-info"}>
+    <div className={"project-card project-info"}>
       <div className={"preview-title"}> {title}</div>
       <div className={"preview-tech"}> {displayTech()}</div>
       <span className={"preview-description"}>
         <hr />
-        TBD: {description}; github.com/nclairesays
+        {description.substring(0, 50)}...
       </span>
     </div>
   );
