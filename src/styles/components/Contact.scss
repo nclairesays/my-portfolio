@@ -1,63 +1,60 @@
 @import "../_variables.scss";
 
 #Contact > .slide > main {
-    flex-direction: column;
-    // background-color: pink;
-    justify-content:  center;
+  flex-direction: column;
+  // background-color: pink;
+  justify-content: center;
 }
 
-.contact-container  {
+.contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   form {
-    flex:1;
-    width: 35vw;
+    flex: 1;
+    width: 55vw;
     height: 60vh;
-    display:flex;
+    display: flex;
     flex-flow: column nowrap;
-    justify-content:  center;
+    justify-content: center;
     align-items: stretch;
     border: 2px dotted $tertiary-color;
     background-color: $transparent-background;
-    padding: 3em;
+    padding: 2em;
     border-radius: 20px;
-    
+
     & .contact-input {
-    margin-bottom: 1em;
-    padding:  .4em .8em;
-    border-radius: 0.2em;
-    border: 1px $tertiary-color solid;
-    flex: 1;
-    font-family: monospace
+      margin-bottom: 1em;
+      padding: 0.4em 0.8em;
+      border-radius: 0.2em;
+      border: 1px $tertiary-color solid;
+      flex: 1;
+      font-family: monospace;
     }
 
     & label {
       align-self: flex-start;
       font-family: monospace;
-      letter-spacing: .1em;
+      letter-spacing: 0.1em;
     }
+  }
 }
-}
-
-
 
 #message {
   height: 10em;
   flex: 4;
   padding-top: 10px;
-  
 }
 
 #submit-btn {
   font-weight: bold;
   margin: 1em 0 1em 0;
-  padding: 0.5em 2.0em;
-  background: $secondary-color; 
+  padding: 0.5em 2em;
+  background: $secondary-color;
   border-radius: 0.4em;
   border: 1px $tertiary-color solid;
-  display:block;
+  display: block;
   flex: 1;
 
   &:hover {
@@ -66,27 +63,24 @@
   }
 }
 
-
-
 #social-media {
   background-color: red;
   flex: 1;
   display: flex;
   .media {
     background-color: blue;
-    
   }
 }
 
 @media screen and (max-width: 620px) {
   .contact-container {
     flex-direction: row;
-    form { 
+    form {
       width: none;
       height: none;
     }
   }
-  
+
   // #Contact h1 {
   //   // background-color: red;
   //   font-size: 3.5em;

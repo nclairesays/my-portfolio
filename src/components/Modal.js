@@ -4,6 +4,8 @@ import ModalDescription from "./ModalDescription";
 import ModalImageContainer from "./ModalImageContainer";
 import "../styles/components/Modal.scss";
 
+//temporarily using props passed in: this.props.project
+//TODO: use redux to store current displayed project
 class Modal extends React.Component {
   handleClick = e => {
     if (e.target.className === "modal") {
@@ -11,27 +13,15 @@ class Modal extends React.Component {
     }
   };
 
-  // handleHover = (e) => {
-  //     if(e.target.className === 'modal-image-container' || e.target.className === 'modal-description'){
-  //         document.querySelector('.modal').setAttribute('style', 'background-color: red')
-  //     }
-  // }
-
   render() {
-    const { description } = this.props;
+    const { project } = this.props;
 
-    window.onClick = e => {
-      console.log("window.onClick ", e);
-    };
-
-    console.log("hit modal");
     return (
       <div className={"modal"} onClick={this.handleClick}>
         <div className={"modal-container"}>
           {" "}
-          {/*onMouseOut={this.handleHover}*/}
-          <ModalImageContainer />
-          <ModalDescription description={description} />
+          <ModalImageContainer {...project} key={`${project.key}-image`} />
+          <ModalDescription {...project} key={`${project.key}-description`} />
         </div>
       </div>
     );

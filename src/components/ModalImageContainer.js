@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 
 class ModalImageContainer extends Component {
   render() {
+    console.log(this.props);
     return (
       <div className={"modal-image-container"}>
         {/* <span className="modal-x-button">&times;</span>  */}

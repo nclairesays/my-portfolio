@@ -6,11 +6,21 @@ import { toggleModal } from "../redux/actions/modalAction";
 import { connect } from "react-redux";
 class Projects extends Component {
   state = {
-    showModal: false
+    projectDisplayedInModal: null
   };
 
-  handleClick = () => {
-    this.setState({ showModal: !this.state.showModal });
+  handleClick = eventOrProject => {
+    //TODO: make one type of input argument or two separate ones
+    const toggledBoolean = !JSON.parse(this.props.showModal);
+    this.props.toggleModal(toggledBoolean);
+    if (toggledBoolean) {
+      // if pass in e:
+      // console.log(project);
+      this.setState({ projectDisplayedInModal: eventOrProject });
+      // const projectName = e.target.getAttribute("name");
+    } else {
+      this.setState({ projectDisplayedInModal: null });
+    }
   };
 
   mainContent = () => {
@@ -32,7 +42,7 @@ class Projects extends Component {
             <ProjectCardContainer
               key={project.key}
               project={project}
-              toggleModal={() => this.handleClick()}
+              toggleModal={e => this.handleClick(project)}
             />
           ))}
         </div>
@@ -42,11 +52,23 @@ class Projects extends Component {
             <ProjectCardContainer
               key={project.key}
               project={project}
-              toggleModal={() => this.handleClick()}
+              toggleModal={e => this.handleClick(project)}
             />
           ))}
         </div>
-        {this.state.showModal && <Modal toggleModal={this.handleClick} />}
+        {this.props.showModal === true ? (
+          <Modal
+            toggleModal={e => this.handleClick(e)}
+            project={this.state.projectDisplayedInModal}
+          />
+        ) : null}
+        <a href="https://github.com/nclairesays" target="_blank">
+          <img
+            src="./GitHub-Mark-64px.png"
+            placeholder="github"
+            style={{ marginTop: "1em" }}
+          />
+        </a>
       </>
     );
   };
@@ -64,7 +86,7 @@ class Projects extends Component {
 
 const mapStateToProps = state => {
   return {
-    toggleModal: state.showModal,
+    showModal: state.showModal,
     projects: state.projects
   };
 };

@@ -16,10 +16,14 @@ const ProjectCardInfo = ({
   };
 
   return (
-    <div className={"project-card project-info"}>
-      <div className={"preview-title"}> {title}</div>
-      <div className={"preview-tech"}> {displayTech()}</div>
-      <span className={"preview-description"}>
+    <div className={"project-card project-info"} name={directory}>
+      <div className={"preview-title"} name={directory}>
+        {title}
+      </div>
+      <div className={"preview-tech"} name={directory}>
+        {displayTech()}
+      </div>
+      <span className={"preview-description"} name={directory}>
         <hr />
         {description.substring(0, 50)}...
       </span>
