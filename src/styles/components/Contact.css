@@ -27,7 +27,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 35vw;
+  width: 55vw;
   height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,14 +43,14 @@
       -ms-flex-align: stretch;
           align-items: stretch;
   border: 2px dotted #ffbc00;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 3em;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2em;
   border-radius: 20px;
 }
 
 .contact-container form .contact-input {
   margin-bottom: 1em;
-  padding: .4em .8em;
+  padding: 0.4em 0.8em;
   border-radius: 0.2em;
   border: 1px #ffbc00 solid;
   -webkit-box-flex: 1;
@@ -63,7 +63,7 @@
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-family: monospace;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 #message {
@@ -77,7 +77,7 @@
 #submit-btn {
   font-weight: bold;
   margin: 1em 0 1em 0;
-  padding: 0.5em 2.0em;
+  padding: 0.5em 2em;
   background: #ffce00;
   border-radius: 0.4em;
   border: 1px #ffbc00 solid;

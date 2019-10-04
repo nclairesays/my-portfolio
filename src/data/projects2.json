@@ -1,0 +1,20 @@
+[
+  {
+    "deployed": "https://andculture-breweries-client.herokuapp.com/breweries"
+  },
+  {
+    "deployedClient": "https://andculture-breweries-client.herokuapp.com/breweries"
+  },
+  {
+    "deployedAPI": "https://andculture-breweries.herokuapp.com/breweries"
+  },
+  {
+    "github": "https://github.com/nclairesays/babbles-to-babbles-backend/"
+  },
+  {
+    "ghServer": "https://github.com/nclairesays/andculture-breweries/"
+  },
+  {
+    "ghClient": "https://github.com/nclairesays/andculture-breweries-client"
+  }
+]

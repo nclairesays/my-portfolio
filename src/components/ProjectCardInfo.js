@@ -22,9 +22,10 @@ const ProjectCardInfo = ({
       </div>
       <div className={"preview-tech"} name={directory}>
         {displayTech()}
+        <hr style={{ width: "50%" }} />
       </div>
+
       <span className={"preview-description"} name={directory}>
-        <hr />
         {description.substring(0, 50)}...
       </span>
     </div>

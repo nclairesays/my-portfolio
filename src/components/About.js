@@ -24,16 +24,16 @@ class About extends Component {
             <br />
             <br />
             Here are some groups that I've been involved with:
-            <ul>
-              <li>Hack for LA</li>
-              <li>Learn Teach Code</li>
-              <li>Women Who Code</li>
-              <li>Girls in Tech</li>
-              <li>LA Code Day (Judge for High School Hackathon)</li>
-              <li>SGV Linux Group</li>
-              <li>DataConLA</li>
-            </ul>
           </p>
+          <ul>
+            <li>Hack for LA</li>
+            <li>Learn Teach Code</li>
+            <li>Women Who Code</li>
+            <li>Girls in Tech</li>
+            <li>LA Code Day (Judge for High School Hackathon)</li>
+            <li>SGV Linux Group</li>
+            <li>DataConLA</li>
+          </ul>
           <h4>Some Technical Skills</h4> I am language agnostic and always open
           to learning new tech! But here is a quick snapshot of the tech I've
           worked with.

@@ -23,7 +23,9 @@
       "directory": "jobs-for-hope",
       "url": {
         "deployed": "https://jobs-for-hope.herokuapp.com",
-        "gihub": "https://github.com/hackforla/jobs-for-hope/tree/claire"
+        "gihub": {
+          "full-stack": "https://github.com/hackforla/jobs-for-hope/tree/claire"
+        }
       },
       "status": "completed"
     },
@@ -31,26 +33,46 @@
       "key": "jTreender",
       "title": "Jackson Treender",
       "tech": ["React-Native", "Redux", "Ruby on Rails", "SQL", "CSS"],
-      "description": "Social meeting app for Jackson Treender Festival",
+      "description": "Social meeting app for Jackson Tree Music Festival. App was inspired by Tinder, hence the name Jackson TrEENDER. While I was creating the app for my final project, I was concurrently learning and implementing React-Native and Redux for the first time! Learned a lot and am proud of what I accomplished in the allocated 2 weeks. Please see my video demo after that two week process. ",
       "directory": "jackson-treender",
       "images": [],
       "url": {
-        "deployed": "https://www.youtube.com/watch?v=1VYzxZ2uxXo",
-        "ghServer": "https://github.com/nclairesays/jackson-treender-backend",
-        "ghClient": " https://github.com/nclairesays/jackson-treender-frontend"
+        "deployed": {
+          "full-stack": "https://www.youtube.com/watch?v=1VYzxZ2uxXo"
+        },
+        "github": {
+          "server": "https://github.com/nclairesays/jackson-treender-backend",
+          "client": " https://github.com/nclairesays/jackson-treender-frontend"
+        }
       },
       "status": "completed"
     },
     {
-      "key": "meetupEd",
-      "title": "Meetup Education",
-      "tech": ["React", "Ruby on Rails", "SQL", "Semantic UI"],
-      "description": "Educational meetups for high schoolers",
+      "key": "andCultureBreweries",
+      "title": "Breweries Map",
+      "tech": [
+        "React",
+        "google-map-react module ",
+        "Ruby on Rails",
+        "PostgreSQL",
+        "SCSS"
+      ],
+      "description": "Mapping Breweries - Full Stack Coding Challenge",
       "images": [],
-      "directory": "jobs-for-hope",
-      "url": {},
+      "directory": "andculture-breweries",
+      "url": {
+        "deployed": {
+          "full-stack": "https://andculture-breweries-client.herokuapp.com/breweries",
+          "api": "https://andculture-breweries.herokuapp.com/breweries"
+        },
+        "github": {
+          "server": "https://github.com/nclairesays/andculture-breweries/",
+          "client": "https://github.com/nclairesays/andculture-breweries-client"
+        }
+      },
       "status": "completed"
     },
+
     {
       "key": "b2b",
       "title": "Babbles to Babbles",
@@ -59,10 +81,13 @@
       "images": [],
       "directory": "babbles-to-babbles",
       "url": {
-        "deployed": "https://protected-cliffs-89398.herokuapp.com/",
-        "github": "https://github.com/nclairesays/babbles-to-babbles-backend/",
-        "ghServer": "https://github.com/nclairesays/babbles-to-babbles-backend/",
-        "ghClient": "https://github.com/nclairesays/babbles-to-babbles-frontend"
+        "deployed": {
+          "full-stack": "https://protected-cliffs-89398.herokuapp.com/"
+        },
+        "github": {
+          "server": "https://github.com/nclairesays/babbles-to-babbles-backend/",
+          "client": "https://github.com/nclairesays/babbles-to-babbles-frontend"
+        }
       },
       "status": "completed"
     },
@@ -73,7 +98,7 @@
       "description": "You're on it! My porfolio",
       "images": [],
       "directory": "my-porfolio",
-      "url": {},
+      "url": { "client": "https://clairenguyen.dev" },
       "status": "ongoing"
     },
     {
@@ -83,7 +108,7 @@
       "tech": ["React", "Node.js", "SCSS/SASS"],
       "images": [],
       "directory": "tdm-calculator",
-      "url": {},
+      "url": { "full-stack": "https://tdm-calc.herokuapp.com/" },
       "status": "ongoing"
     },
 
@@ -108,6 +133,16 @@
       "directory": "jobs-for-hope",
       "url": {},
       "status": "ongoing"
+    },
+    {
+      "key": "meetupEd",
+      "title": "Meetup Education",
+      "tech": ["React", "Ruby on Rails", "SQL", "Semantic UI"],
+      "description": "Educational meetups for high schoolers",
+      "images": [],
+      "directory": "jobs-for-hope",
+      "url": {},
+      "status": "completed"
     }
   ]
 }

@@ -1,7 +1,7 @@
 /*Variables*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .modal {
-  background-color: rgba(17, 17, 17, 0.5);
+  background-color: rgba(17, 17, 17, 0.7);
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -20,7 +20,6 @@
 }
 
 .modal-container {
-  background-color: palevioletred;
   width: 70%;
   height: 70%;
 }
@@ -36,13 +35,13 @@
 }
 
 .modal-container .modal-description {
-  background-color: peru;
+  background-color: #ffc993;
   height: 30%;
   width: 100%;
 }
 
 .modal-container .modal-image-container {
-  background-color: royalblue;
+  background-color: #d0fffd;
   width: 100%;
   height: 70%;
 }
