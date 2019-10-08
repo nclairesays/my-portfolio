@@ -45,7 +45,8 @@ const ModalDescription = ({
       <br />
       <br />
       <br />
-      (still working on this projects section of my site. )
+      (still working on this projects section of my portfolio site. detailed
+      description to be added + will make it prettier soon. )
     </div>
   );
 };
