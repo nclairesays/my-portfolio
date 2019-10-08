@@ -25,9 +25,11 @@ const ProjectCardInfo = ({
         <hr style={{ width: "50%" }} />
       </div>
 
-      <span className={"preview-description"} name={directory}>
-        {description.substring(0, 50)}...
-      </span>
+      <div style={{ lineHeight: ".6em" }}>
+        <span className={"preview-description"} name={directory}>
+          {description.substring(0, 50)}...
+        </span>
+      </div>
     </div>
   );
 };

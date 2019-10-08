@@ -62,7 +62,11 @@ class Projects extends Component {
             project={this.state.projectDisplayedInModal}
           />
         ) : null}
-        <a href="https://github.com/nclairesays" target="_blank">
+        <a
+          href="https://github.com/nclairesays"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="./GitHub-Mark-64px.png"
             placeholder="github"

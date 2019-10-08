@@ -22,8 +22,8 @@
       "description": "Find work helping in homelessness sector",
       "directory": "jobs-for-hope",
       "url": {
-        "deployed": "https://jobs-for-hope.herokuapp.com",
-        "gihub": {
+        "deployed": { "full-stack": "https://jobs-for-hope.herokuapp.com" },
+        "github": {
           "full-stack": "https://github.com/hackforla/jobs-for-hope/tree/claire"
         }
       },
@@ -37,7 +37,7 @@
       "directory": "jackson-treender",
       "images": [],
       "url": {
-        "deployed": {
+        "video demo": {
           "full-stack": "https://www.youtube.com/watch?v=1VYzxZ2uxXo"
         },
         "github": {
@@ -72,7 +72,6 @@
       },
       "status": "completed"
     },
-
     {
       "key": "b2b",
       "title": "Babbles to Babbles",
@@ -98,7 +97,14 @@
       "description": "You're on it! My porfolio",
       "images": [],
       "directory": "my-porfolio",
-      "url": { "client": "https://clairenguyen.dev" },
+      "url": {
+        "live": {
+          "client": "https://clairenguyen.dev"
+        },
+        "github": {
+          "client": " https://github.com/nclairesays/my-portfolio"
+        }
+      },
       "status": "ongoing"
     },
     {
@@ -108,7 +114,14 @@
       "tech": ["React", "Node.js", "SCSS/SASS"],
       "images": [],
       "directory": "tdm-calculator",
-      "url": { "full-stack": "https://tdm-calc.herokuapp.com/" },
+      "url": {
+        "live": {
+          "full-stack": "https://tdm-calc.herokuapp.com/"
+        },
+        "github": {
+          "full-stack": "https://github.com/hackforla/tdm-calculator"
+        }
+      },
       "status": "ongoing"
     },
 
