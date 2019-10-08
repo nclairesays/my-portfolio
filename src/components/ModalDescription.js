@@ -36,9 +36,16 @@ const ModalDescription = ({
   return (
     <div className={"modal-description"}>
       {title} <br />
+      <br />
       {description}
       <br />
+      <br />
       {displayURL()}
+      <br />
+      <br />
+      <br />
+      <br />
+      (still working on this projects section of my site. )
     </div>
   );
 };

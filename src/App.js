@@ -5,19 +5,21 @@ import "./styles/all.scss";
 
 class App extends Component {
   componentDidMount() {
-    setTimeout(this.checkScroll, 500);
+    setTimeout(this.checkScroll, 1500);
   }
 
   checkScroll = () => {
     window.addEventListener("wheel", function(e) {
       const targets =
         e.target.parentNode.className !== "aboutMeDetails" &&
-        e.target.parentNode.parentNode.className !== "aboutMeDetails" &&
-        e.target.className !== "aboutMeDetails";
+        e.target.className !== "aboutMeDetails" &&
+        window.innerWidth > "650" &&
+        e.target.parentNode.parentNode.className !== "aboutMeDetails";
+
       if (targets && e.deltaY > 0) {
         // wheel scroll down => scroll right
         window.scrollBy({
-          left: 400,
+          left: 600,
           top: 0,
           behavior: "smooth"
         });
@@ -25,7 +27,7 @@ class App extends Component {
       if (targets && e.deltaY < 0) {
         // wheel scroll up -> scroll left
         window.scrollBy({
-          left: -400,
+          left: -600,
           top: 0,
           behavior: "smooth"
         });

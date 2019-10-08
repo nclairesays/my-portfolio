@@ -19,9 +19,8 @@ class Modal extends React.Component {
     return (
       <div className={"modal"} onClick={this.handleClick}>
         <div className={"modal-container"}>
-          {" "}
-          <ModalImageContainer {...project} key={`${project.key}-image`} />
           <ModalDescription {...project} key={`${project.key}-description`} />
+          <ModalImageContainer {...project} key={`${project.key}-image`} />
         </div>
       </div>
     );
