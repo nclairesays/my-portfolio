@@ -4,15 +4,46 @@ import { connect } from "react-redux";
 import "./styles/all.scss";
 
 class App extends Component {
+  componentDidMount() {
+    setTimeout(this.checkScroll, 500);
+  }
+
+  checkScroll = () => {
+    window.addEventListener("wheel", function(e) {
+      const targets =
+        e.target.parentNode.className !== "aboutMeDetails" &&
+        e.target.parentNode.parentNode.className !== "aboutMeDetails" &&
+        e.target.className !== "aboutMeDetails";
+      if (targets && e.deltaY > 0) {
+        // wheel scroll down => scroll right
+        window.scrollBy({
+          left: 400,
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+      if (targets && e.deltaY < 0) {
+        // wheel scroll up -> scroll left
+        window.scrollBy({
+          left: -400,
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    });
+  };
+
   render() {
     return (
       <>
         <NavBar />
         <div className="scrolling-wrapper">
+          {/* <div className="wrapper"> */}
           <Home />
           <About />
           <Projects />
           <Contact />
+          {/* </div> */}
         </div>
       </>
     );

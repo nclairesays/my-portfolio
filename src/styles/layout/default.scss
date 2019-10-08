@@ -1,127 +1,138 @@
-@import '../_variables.scss';
+@import "../_variables.scss";
 
 .scrolling-wrapper {
-    height:98vh;
-    position: absolute;
+  height: 98vh;
+  position: absolute;
+  display: flex;
+  background-image: url("../assets/bg-sky4.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  // CSS BELOW FOR SIDE SCROLL,must fix responsiveness
+  //   height: 100vw;
+  //   width: 100vh;
+  //   transform: rotate(-90deg) translateX(-100vh);
+  //   transform-origin: top left;
+  //   overflow-y: scroll;
+  //   overflow-x: hidden;
+  //   .wrapper {
+  //     display: flex;
+  //     flex-direction: row;
+  //     width: 600vw;
+  //     height: 100%;
+  //     transform: rotate(90deg) translateY(-100vh);
+  //     transform-origin: top left;
+  //     background-image: url("../assets/bg-sky4.png");
+  //     background-repeat: repeat-x;
+  //     background-size: contain;
+  //   }
+  // CSS ABOVE FOR SIDE SCROLL;
+
+  .page {
+    height: 98vh;
+    min-height: 98vh;
+    width: 100vw;
+    min-width: 300px;
     display: flex;
-    background-image: url('../assets/bg-sky4.png');
-    background-repeat: repeat-x;
-    background-size: contain;
-    
+    justify-content: center;
+    flex: 0 0 auto;
+    overflow: hidden;
 
-    .page {
-        height:98vh;
-        min-height: 98vh;
-        width: 100vw;
-        min-width: 300px;
-        display: flex;  
-        justify-content: center;
-        flex: 0 0 auto;
-        overflow: hidden;
+    // background-color: rgba(247, 251, 0, .3);
 
-        // background-color: rgba(247, 251, 0, .3);
+    .slide {
+      margin-top: 3vh;
+      width: 90%;
+      height: 95%;
+      min-height: 90vh;
+      align-content: center;
+      text-align: center;
+      border-radius: 3rem;
+      display: flex;
+      flex-direction: column;
+      padding: 0.5em 2em 0.5em 2em;
 
-        .slide {
-            margin-top: 3vh;
-            width: 90%;
-            height: 95%;
-            min-height: 90vh;
-            align-content: center;
-            text-align: center;
-            border-radius: 3rem;
-            display: flex;
-            flex-direction: column;
-            padding: .5em 2em .5em 2em;
+      // background-color: $transparent-background;
 
-            
-            // background-color: $transparent-background;
-            
-        
-            & h1, h3 {
-                font-family: monospace;
-                // color: $primary-color;
-                color: white;
-                letter-spacing: 0.15em;
-                margin: 0 0 .2em 0;
-                text-shadow: $teal-border;
-            }
-            & h1 {
-                // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
-                font-size: calc(24px + (48 - 24) * ((100vw - 100px) / (1200 - 300))) ;
-            }
+      & h1,
+      h3 {
+        font-family: monospace;
+        // color: $primary-color;
+        color: white;
+        letter-spacing: 0.15em;
+        margin: 0 0 0.2em 0;
+        text-shadow: $teal-border;
+      }
+      & h1 {
+        // font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+        font-size: calc(24px + (48 - 24) * ((100vw - 100px) / (1200 - 300)));
+      }
 
-            & > main {
-                display: flex;
-                // flex-flow: row wrap;
-                flex: 1 1 auto;
-                // flex-wrap: nowrap; 
-                font-size: 1.2em;
-                color: $text-dark-brown;
-                height: 100%;
-                width: 100%;
-                // background-color: $transparent-background3;
-
-                
-            } 
-        }
+      & > main {
+        display: flex;
+        // flex-flow: row wrap;
+        flex: 1 1 auto;
+        // flex-wrap: nowrap;
+        font-size: 1.2em;
+        color: $text-dark-brown;
+        height: 100%;
+        width: 100%;
+        // background-color: $transparent-background3;
+      }
     }
+  }
 }
 
-
 .hide {
-    opacity: 0;
+  opacity: 0;
 }
 
 .show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .center {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-  
+
 .content {
-    margin: 0 auto;
-    width: 960px;
+  margin: 0 auto;
+  width: 960px;
 }
-  
+
 .clear {
-clear: both;
+  clear: both;
 }
 
-
- 
 /* Smartphones (portrait and landscape) ----------- */
-@media screen and (max-width : 640px) {
-    html, body {
-        overflow-x: hidden;
-    }
-    .scrolling-wrapper {
-      display: block;
-      height: auto;
-      background-size: 500% 100vh;
-      background-position-x: 90%;
-      position: relative;
+@media screen and (max-width: 640px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .scrolling-wrapper {
+    display: block;
+    height: auto;
+    background-size: 500% 100vh;
+    background-position-x: 90%;
+    position: relative;
     //   .page {
     //     height: auto;
     //     min-height: auto;
     //   }
-    }
-   
   }
-
+}
 
 // ask about this... font-size isn't being dynamaic
 @media screen and (min-width: 1000px) {
-   h1 {
-       font-size:4em;
-   } 
+  h1 {
+    font-size: 4em;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    h1 {
-        font-size:80vw;
-        // background-color: pink;
-    } 
- }
-
+  h1 {
+    font-size: 80vw;
+    // background-color: pink;
+  }
+}
