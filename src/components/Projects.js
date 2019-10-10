@@ -23,7 +23,7 @@ class Projects extends Component {
     }
   };
 
-  mainContent = () => {
+  render() {
     const completed = [];
     const ongoing = [];
 
@@ -34,9 +34,8 @@ class Projects extends Component {
         ongoing.push(p);
       }
     });
-
     return (
-      <>
+      <Slide slideID={"Projects"} slideTitle={"Projects"}>
         <div className="projects-wrapper">
           {completed.map(project => (
             <ProjectCardContainer
@@ -73,17 +72,7 @@ class Projects extends Component {
             style={{ marginTop: "1em" }}
           />
         </a>
-      </>
-    );
-  };
-
-  render() {
-    return (
-      <Slide
-        slideID={"Projects"}
-        slideTitle={"Projects"}
-        mainContent={this.mainContent()}
-      />
+      </Slide>
     );
   }
 }

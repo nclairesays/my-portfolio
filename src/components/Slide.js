@@ -1,15 +1,14 @@
-import React from 'react'
+import React from "react";
 
-
-const Slide = (props) => {
-    return <div className='page' id={props.slideID}>
-    <div className='slide'>
-        <h1>{props.slideTitle}</h1>
-        <main className={'main'}>
-            {props.mainContent}
-        </main>
-        </div>
+const Slide = ({ slideID, slideTitle, children }) => {
+  return (
+    <div className="page" id={slideID}>
+      <div className="slide">
+        <h1>{slideTitle}</h1>
+        <main className={"main"}>{children}</main>
+      </div>
     </div>
-}
+  );
+};
 
-export default Slide
+export default Slide;
