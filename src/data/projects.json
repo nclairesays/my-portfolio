@@ -19,7 +19,11 @@
       "key": "jobs-for-hope",
       "title": "Jobs For Hope",
       "tech": ["React", "Node.js", "PostgreSQL", "SCSS/SASS"],
-      "description": "Find work helping in homelessness sector",
+      "description": [
+        "Job board to help alleviate homelessness.",
+        "Jobs for Hope is a job board web application with a mission to integrate with the LA County Office of Homelessness Initative's website.  The goal was to create a better user experience for job seekers who want to find work helping within the homelessness sector. Our app helps aggregate job postings from 60 non-profits and allows a job seeker in depth filtering options all on one website (as opposed to the individual non-profit's site).",
+        "I helped consolidate the filtering component, created edit options for admins and employers, and styled the web app."
+      ],
       "directory": "jobs-for-hope",
       "url": {
         "deployed": { "full-stack": "https://jobs-for-hope.herokuapp.com" },
@@ -33,7 +37,10 @@
       "key": "jTreender",
       "title": "Jackson Treender",
       "tech": ["React-Native", "Redux", "Ruby on Rails", "SQL", "CSS"],
-      "description": "Social meeting app for Jackson Tree Music Festival. App was inspired by Tinder, hence the name Jackson TrEENDER. While I was creating the app for my final project, I was concurrently learning and implementing React-Native and Redux for the first time! Learned a lot and am proud of what I accomplished in the allocated 2 weeks. Please see my video demo after that two week process. ",
+      "description": [
+        "Social meeting app for Jackson Tree Music Festival.",
+        " App was inspired by Tinder, hence the name Jackson TrEENDER. While I was creating the app for my final project, I was concurrently learning and implementing React-Native and Redux for the first time! Learned a lot and am proud of what I accomplished in the allocated 2 weeks. Please see my video demo after that two week process. "
+      ],
       "directory": "jackson-treender",
       "images": [],
       "url": {
@@ -57,7 +64,7 @@
         "PostgreSQL",
         "SCSS"
       ],
-      "description": "Mapping Breweries - Full Stack Coding Challenge",
+      "description": ["Mapping Breweries, a Full Stack Coding Challenge.", ""],
       "images": [],
       "directory": "andculture-breweries",
       "url": {
@@ -76,7 +83,7 @@
       "key": "b2b",
       "title": "Babbles to Babbles",
       "tech": ["Vanilla Javascript", "Ruby on Rails", "SQL", "Bootstrap"],
-      "description": "A reverse Apples-to-Apples spin off.",
+      "description": ["A reverse Apples-to-Apples spin-off game.", ""],
       "images": [],
       "directory": "babbles-to-babbles",
       "url": {
@@ -94,7 +101,7 @@
       "key": "myPortfolio",
       "title": "Portfolio Site",
       "tech": ["React", "Redux", "SCSS/SASS"],
-      "description": "You're on it! My porfolio",
+      "description": ["My porfolio site. You're on it!", ""],
       "images": [],
       "directory": "my-porfolio",
       "url": {
@@ -110,7 +117,7 @@
     {
       "key": "",
       "title": "TDM Calculator",
-      "description": "LA Developers are overbuilding parking lots.",
+      "description": ["A calculator to address the excess parking in LA.", ""],
       "tech": ["React", "Node.js", "SCSS/SASS"],
       "images": [],
       "directory": "tdm-calculator",
@@ -129,7 +136,7 @@
       "key": "thriftTheaters",
       "title": "Thrift Theaters",
       "tech": ["TBD"],
-      "description": "personal project on its way",
+      "description": ["A personal project on its way", ""],
       "images": [],
       "directory": "thrift-theaters",
       "url": {},

@@ -11,12 +11,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // font-size: 1em;
 }
 
 .modal-container {
   // background-color: palevioletred;
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  // height: 80%;
 
   .modal-x-button {
     height: 100px;
@@ -29,9 +30,25 @@
   }
 
   .modal-description {
-    background-color: #ffbc00;
-    height: 70%;
+    box-sizing: border-box;
+    // background-color: #ffbc00;
+    background-color: #d7eef9;
     width: 100%;
+    padding: 1em;
+    font-size: 0.8em;
+  }
+
+  .project-links {
+    color: $primary-color;
+    background-color: white;
+    padding: 0.5em;
+    margin: 0.25em;
+    // border-radius: /%;
+    display: inline-block;
+    &:hover {
+      background-color: $secondary-color;
+      color: white;
+    }
   }
 
   .modal-image-container {

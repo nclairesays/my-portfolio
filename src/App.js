@@ -10,6 +10,7 @@ class App extends Component {
 
   checkScroll = () => {
     window.addEventListener("wheel", function(e) {
+      console.log("e.target", e.target);
       const targets =
         e.target.parentNode.className !== "aboutMeDetails" &&
         e.target.className !== "aboutMeDetails" &&

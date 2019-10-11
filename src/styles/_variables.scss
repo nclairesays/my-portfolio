@@ -15,14 +15,24 @@ $white-border: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white; /
 $teal-border: 4px 4px $primary-color, -1px 1px $primary-color, 1px -1px $primary-color, -1px -1px $primary-color; // for text-shadow prop
 $text-brown: #664b00;
 $text-dark-brown: #3a2a00;
+$skyblue-color: #d7eef9;
 
-$main-font: (-apple-system, BlinkMacSystemFont, "Abel", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif)
+$main-font: (
+  -apple-system,
+  BlinkMacSystemFont,
+  "Abel",
+  "Roboto",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  "Fira Sans",
+  "Droid Sans",
+  "Helvetica Neue",
+  sans-serif
+);
 
 // pretty green color:
 // background-color: rgba(21, 253, 0, 0.3);
-
 
 // @function set-text-color($bg-color) {
 //   @if (lightness($bg-color) > 50) {

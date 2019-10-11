@@ -20,11 +20,11 @@ const ModalDescription = ({
         console.log("link", link);
         html.push(
           <>
-            |{" "}
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" className="project-links">
+              {/* <button> */}
               {site.charAt(0).toUpperCase() + site.substr(1)} ({stack})
+              {/* </button> */}
             </a>{" "}
-            |
           </>
         );
       }
@@ -35,18 +35,15 @@ const ModalDescription = ({
   };
   return (
     <div className={"modal-description"}>
-      {title} <br />
-      <br />
-      {description}
-      <br />
-      <br />
+      <h2 style={{ margin: ".1em auto .4em auto", color: "#0f8a7c" }}>
+        {title}
+      </h2>
       {displayURL()}
-      <br />
-      <br />
-      <br />
-      <br />
-      (still working on this projects section of my portfolio site. detailed
-      description to be added + will make it prettier soon. )
+      {description.map((info, i) => {
+        if (i !== 0) {
+          return <p>{info}</p>;
+        }
+      })}
     </div>
   );
 };

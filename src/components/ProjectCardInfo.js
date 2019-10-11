@@ -27,7 +27,7 @@ const ProjectCardInfo = ({
 
       <div style={{ lineHeight: ".6em" }}>
         <span className={"preview-description"} name={directory}>
-          {description.substring(0, 50)}...
+          {description[0].substring(0, 50)}...
         </span>
       </div>
     </div>
