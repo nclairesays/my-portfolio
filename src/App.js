@@ -19,7 +19,7 @@ class App extends Component {
       if (targets && e.deltaY > 0) {
         // wheel scroll down => scroll right
         window.scrollBy({
-          left: 600,
+          left: window.innerWidth / 2,
           top: 0,
           behavior: "smooth"
         });
@@ -27,7 +27,7 @@ class App extends Component {
       if (targets && e.deltaY < 0) {
         // wheel scroll up -> scroll left
         window.scrollBy({
-          left: -600,
+          left: -(window.innerWidth / 2),
           top: 0,
           behavior: "smooth"
         });
