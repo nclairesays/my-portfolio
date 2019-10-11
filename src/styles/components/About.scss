@@ -11,8 +11,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../assets/profile1.jpg);
+  background-image: url(../assets/profile-pics/profile1.jpg);
+  cursor: pointer;
 }
+
 .aboutMeDetails {
   flex: 1.5;
   height: 100%;
