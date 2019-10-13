@@ -17,6 +17,12 @@ const ProfilePic = () => {
   });
   const picList = [pic1, pic2, pic3, pic4, pic5, pic6];
   const picImageStyle = i => {
+    if (i === 5 || i === 4) {
+      return {
+        backgroundImage: "url(" + picList[i] + ")",
+        backgroundPositionX: "right"
+      };
+    }
     return { backgroundImage: "url(" + picList[i] + ")" };
   };
 
