@@ -25,3 +25,19 @@
   padding-left: 1em;
   background-color: $transparent-background;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width: 640px) {
+  #About {
+    height: auto;
+    .slide {
+      height: auto;
+      .main {
+        flex-direction: column-reverse;
+        .aboutMeDetails {
+          width: auto;
+        }
+      }
+    }
+  }
+}

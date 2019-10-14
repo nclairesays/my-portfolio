@@ -116,10 +116,11 @@
     background-size: 500% 100vh;
     background-position-x: 90%;
     position: relative;
-    //   .page {
-    //     height: auto;
-    //     min-height: auto;
-    //   }
+    .page {
+      //     height: auto;
+      //     min-height: auto;
+      width: 100%;
+    }
   }
 }
 

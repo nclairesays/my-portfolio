@@ -39,7 +39,8 @@
       "tech": ["React-Native", "Redux", "Ruby on Rails", "SQL", "CSS"],
       "description": [
         "Social meeting app for Jackson Tree Music Festival.",
-        " App was inspired by Tinder, hence the name Jackson TrEENDER. While I was creating the app for my final project, I was concurrently learning and implementing React-Native and Redux for the first time! Learned a lot and am proud of what I accomplished in the allocated 2 weeks. Please see my video demo after that two week process. "
+        "There were a lot of  \"firsts\" in this app. This was my first time creating a React-Native app and my first time using Redux. ",
+        "This app was initiated as a final project for my bootcamp, where we were required to create a full stack web app using React and Ruby on Rails. However, I decided to go beyond the requirements and decided to learned and implement React-Native and Redux. It was an ambitious project and I am proud of what I accomplished in the allocated 2 weeks. Please see my video demo after that two week process. "
       ],
       "directory": "jackson-treender",
       "images": [],
@@ -64,7 +65,11 @@
         "PostgreSQL",
         "SCSS"
       ],
-      "description": ["Mapping Breweries, a Full Stack Coding Challenge.", ""],
+      "description": [
+        "Mapping Breweries, a Full Stack Coding Challenge.",
+        "This is an app I created for a full stack coding challenge. The goal was to \"Build a single page application using React to display a list of breweries with the ability to click on an item from the list to view more details on that brewery.\" The requirements included utilizing an OpenBreweryDB API, mapping the brewery, and navigating between the list and the details page. ",
+        "Here were the optional \"stretch\" goals that I included in the app. Intermediate: 1) SASS for the styling 2) Heroku for hosting. Advanced: 1) Build a custom back-end to retrieve the brewery from a custom REST api and database, which I used Ruby on Rails and PostgreSQL for this."
+      ],
       "images": [],
       "directory": "andculture-breweries",
       "url": {
@@ -83,7 +88,11 @@
       "key": "b2b",
       "title": "Babbles to Babbles",
       "tech": ["Vanilla Javascript", "Ruby on Rails", "SQL", "Bootstrap"],
-      "description": ["A reverse Apples-to-Apples spin-off game.", ""],
+      "description": [
+        "A reverse Apples-to-Apples spin-off game.",
+        "This multi-player game was created for educational purposes only. I created single page application to practice using vanilla javascript, including most of the styling. The frontend makes calls to the New Yorker API and fetches a random cartoon image. The backend utilizes Ruby on Rails to store the characters and the winning image/quote combo.",
+        "Instructions on how to play: Choose your characters. Write a caption for a random unknown image. Each player takes turn being the judge of the random image-caption combo entry."
+      ],
       "images": [],
       "directory": "babbles-to-babbles",
       "url": {
@@ -101,7 +110,10 @@
       "key": "myPortfolio",
       "title": "Portfolio Site",
       "tech": ["React", "Redux", "SCSS/SASS"],
-      "description": ["My porfolio site. You're on it!", ""],
+      "description": [
+        "My porfolio site. You're on it!",
+        "You're on it! This is my portfolio site created using React, Redux, and SCSS. I've always wanted to make a side scrolling portfolio website and finally made it happen!"
+      ],
       "images": [],
       "directory": "my-porfolio",
       "url": {
@@ -117,7 +129,11 @@
     {
       "key": "",
       "title": "TDM Calculator",
-      "description": ["A calculator to address the excess parking in LA.", ""],
+      "description": [
+        "A calculator to address the excess parking in LA.",
+        "This project was brought to Hack for LA by the LA Department of Transportation. Additional information regarding the project is on-hold as we need to sign an NDA. ",
+        "We are still in the beginning phases of this project. The parts I contributed to so far included the discovery process, user story, and authentication/login."
+      ],
       "tech": ["React", "Node.js", "SCSS/SASS"],
       "images": [],
       "directory": "tdm-calculator",
@@ -131,12 +147,14 @@
       },
       "status": "ongoing"
     },
-
     {
       "key": "thriftTheaters",
       "title": "Thrift Theaters",
       "tech": ["TBD"],
-      "description": ["A personal project on its way", ""],
+      "description": [
+        "A personal project on its way",
+        "A personal project on its way"
+      ],
       "images": [],
       "directory": "thrift-theaters",
       "url": {},

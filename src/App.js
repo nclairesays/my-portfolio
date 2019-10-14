@@ -15,7 +15,8 @@ class App extends Component {
         e.target.parentNode.className !== "aboutMeDetails" &&
         e.target.className !== "aboutMeDetails" &&
         window.innerWidth > "650" &&
-        e.target.parentNode.parentNode.className !== "aboutMeDetails";
+        e.target.parentNode.parentNode.className !== "aboutMeDetails" &&
+        e.target !== null;
 
       if (targets && e.deltaY > 0) {
         // wheel scroll down => scroll right

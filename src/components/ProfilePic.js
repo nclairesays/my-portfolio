@@ -22,6 +22,8 @@ const ProfilePic = () => {
         backgroundImage: "url(" + picList[i] + ")",
         backgroundPositionX: "right"
       };
+    } else if (i === 2) {
+      return { backgroundPositionY: "90%" };
     }
     return { backgroundImage: "url(" + picList[i] + ")" };
   };
